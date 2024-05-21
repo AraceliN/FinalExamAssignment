@@ -13,8 +13,13 @@ public class VanessaTileTracker : MonoBehaviour
     // List<TileInfo> TravelledTiles = new List<TileInfo>();
 
     GameObject RoomCollider;
-    GameObject Vanessa;
+    GameObject character;
     Vector2 characterPos;
+
+    GameObject Kitchenvent;
+
+    public Transform Vanessa;
+    public Transform GirlsBlue;
 
 
     public void OnTriggerEnter2D(Collider2D room)
@@ -24,7 +29,7 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "Controlroom";
         }
 
-        else if (room.tag == "ControlroomVent")
+        else if (room.tag == "ControlroomVent") //Vent
         {
             VcurrentTile = "East Hall";
         }
@@ -44,14 +49,14 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "DiningArea";
         }
 
-        else if (room.tag == "Backroom")
-        {
-            VcurrentTile = "Backroom";
-        }
-
         else if (room.tag == "BackroomVent")     //Vent
         {
             VcurrentTile = "Kitchen";
+        }
+
+        else if (room.tag == "Backroom")
+        {
+            VcurrentTile = "Backroom";
         }
 
         else if (room.tag == "Unisex")
@@ -92,6 +97,7 @@ public class VanessaTileTracker : MonoBehaviour
         else if (room.tag == "SupplyClosetVent") //Vent
         {
             VcurrentTile = "Girls";
+            Vanessa.transform.position = GirlsBlue.position;
         }
 
         else if (room.tag == "Arcade")
