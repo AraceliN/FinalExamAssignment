@@ -41,8 +41,10 @@ public class GameManager : MonoBehaviour
                 HandleAnimatronicTurn();
                 break;
             case Gamestate.VanessaVictory:
+                HandleVanessaVictory();
                 break;
             case Gamestate.VanessaLoss:
+                HandleVanessaLoss();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newstate), newstate, null);
@@ -68,6 +70,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void HandleAnimatronicTurn()
+    {
+
+    }
+
+    public void HandleVanessaVictory()
+    {
+
+    }
+
+    public void HandleVanessaLoss()
     {
 
     }
