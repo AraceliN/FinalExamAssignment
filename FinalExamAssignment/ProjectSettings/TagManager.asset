@@ -21,6 +21,12 @@ TagManager:
   - Stage
   - Controlroom
   - Entrance
+  - GirlsVent
+  - SupplyClosetVent
+  - BackroomVent
+  - KitchenVent
+  - EastHallVent
+  - ControlroomVent
   layers:
   - Default
   - TransparentFX
