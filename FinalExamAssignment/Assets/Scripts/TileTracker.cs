@@ -8,17 +8,22 @@ using Unity.VisualScripting;
 public class TileTracker : MonoBehaviour
 {
 
-    TileInfo currentTile;
-    List<TileInfo> TravelledTiles = new List<TileInfo>();
+    public TileInfo currentTile;
+    public List<TileInfo> TravelledTiles = new List<TileInfo>();
 
     GameObject RoomCollider;
     GameObject character;
     Vector2 characterPos;
 
+    private void Start()
+    {
+        TileInfo currentTile = new TileInfo(Room.ControlRoom, Tiletype.Standard);
+    }
+
     public void OnTriggerEnter2D(Collider2D room)
     {
 
-        if (room.tag == "ControlRoom")
+        if (room.tag == "Controlroom")
         {
             TileInfo currentTile = new TileInfo(Room.ControlRoom, Tiletype.Standard);
         }
@@ -34,7 +39,7 @@ public class TileTracker : MonoBehaviour
         {
             TileInfo currentTile = new TileInfo(Room.DiningArea, Tiletype.Standard);
         }
-        else if (room.tag == "BackRoom")
+        else if (room.tag == "Backroom")
         {
             TileInfo currentTile = new TileInfo(Room.BackRoom, Tiletype.Standard);
         }
@@ -54,7 +59,7 @@ public class TileTracker : MonoBehaviour
         {
             TileInfo currentTile = new TileInfo(Room.Restrooms, Tiletype.Standard);
         }
-        else if (room.tag == "Pirate")
+        else if (room.tag == "PirateCove")
         {
             TileInfo currentTile = new TileInfo(Room.PirateCove, Tiletype.Standard);
         }
@@ -95,6 +100,13 @@ public class TileTracker : MonoBehaviour
         TravelledTiles.Add(currentTile);
         Debug.Log(currentTile);
 
+    }
+
+    public void OnTriggerExit2D(Collider2D room)
+    {
+        TileInfo currentTile = new TileInfo(Room.None, Tiletype.Standard);
+        TravelledTiles.Add(currentTile);
+        Debug.Log(currentTile);
     }
     //Adds the current Tile being stood on to the list
     //Make sure parent object at (0;0)
@@ -352,6 +364,15 @@ public class TileTracker : MonoBehaviour
     // Finds the most recent item in the list
     public void FindLast(List<TileInfo> travelledtiles)
     {
-        TravelledTiles.Last();
+        travelledtiles.Last();
+    }
+
+    
+    public void AddStartingTiles(GameObject character, List<TileInfo> tiles)
+    {
+        if (character.tag == "Vanessa")
+        {
+            TileInfo currentTile = new TileInfo(Room.SecurityOffice, Tiletype.Standard);
+        }
     }
 }
