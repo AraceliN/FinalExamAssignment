@@ -9,6 +9,18 @@ TagManager:
   - WestHall
   - EastHall
   - PrizeCorner
+  - SupplyCloset
+  - PirateCove
+  - Backroom
+  - Kitchen
+  - Boys
+  - Girls
+  - Unisex
+  - SecurityOffice
+  - DiningArea
+  - Stage
+  - Controlroom
+  - Entrance
   layers:
   - Default
   - TransparentFX
