@@ -3,7 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Arcade
+  - Restrooms
+  - WestHall
+  - EastHall
+  - PrizeCorner
+  - SupplyCloset
+  - PirateCove
+  - Backroom
+  - Kitchen
+  - Boys
+  - Girls
+  - Unisex
+  - SecurityOffice
+  - DiningArea
+  - Stage
+  - Controlroom
+  - Entrance
   layers:
   - Default
   - TransparentFX
