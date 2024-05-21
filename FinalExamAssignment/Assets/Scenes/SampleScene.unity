@@ -6266,7 +6266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 137, y: -77}
+  m_AnchoredPosition: {x: 249.99997, y: -127.99999}
   m_SizeDelta: {x: 51.536, y: 33.9803}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851890858
@@ -13555,8 +13555,12 @@ MonoBehaviour:
   EndAnimatronicTurnButton: {fileID: 1480509890}
   StartAnimatronicTurnButton: {fileID: 304395070}
   VanessaButtons: {fileID: 160310392}
-  AnimatronicButtons: {fileID: 0}
+  AnimatronicButtons: {fileID: 1663477753}
   GameView: {fileID: 1170099106}
+  Foxy: {fileID: 1180456880}
+  Chica: {fileID: 1466853902}
+  Freddy: {fileID: 1269996702}
+  Vanessa: {fileID: 490292308}
 --- !u!4 &1338054686
 Transform:
   m_ObjectHideFlags: 0
@@ -14515,7 +14519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 137, y: -77}
+  m_AnchoredPosition: {x: 250, y: -128}
   m_SizeDelta: {x: 51.536, y: 33.9803}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480509892

@@ -9,8 +9,10 @@ public class PowerMeterManager : MonoBehaviour
     public GameObject GuardActionsButtonsCanvas;
     public GameObject VanessaButtonCanvas;
     public GameObject LoseCanvas;
+    public GameObject GuardActionButton;
     public GameObject PowerMeterCanvas;
     public PowerMeterScript PowerMeterScript;
+    public GameObject SwitchScreen;
 
     public void Update()
     {
@@ -19,6 +21,8 @@ public class PowerMeterManager : MonoBehaviour
             GuardActionsButtonsCanvas.SetActive(false);
             PowerMeterCanvas.SetActive(false);
             LoseCanvas.SetActive(true);
+            SwitchScreen.SetActive(false);
+
         }
     }
 
@@ -26,7 +30,8 @@ public class PowerMeterManager : MonoBehaviour
     public void GuardActionIsPressed()
     {
         GuardActionsButtonsCanvas.SetActive(true);
-        VanessaButtonCanvas.SetActive(false);
+        GuardActionButton.SetActive(false);
+        VanessaButtonCanvas.SetActive(true);
     }
 
     //when the button is pressed, it will call the text object and minus the specified number accordingly
@@ -34,13 +39,18 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 1;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
+        GuardActionButton.SetActive(true);
+        GuardActionsButtonsCanvas.SetActive(false);
         return;
+
     }
 
     public void CloseDoorButtonPressed()
     {
         PowerMeterScript.PowerMeter -= 1;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
+        GuardActionButton.SetActive(true);
+        GuardActionsButtonsCanvas.SetActive(false);
         return;
     }
 
@@ -48,6 +58,8 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 3;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
+        GuardActionButton.SetActive(true);
+        GuardActionsButtonsCanvas.SetActive(false);
         return;
     }
 
@@ -55,6 +67,8 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 3;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
+        GuardActionButton.SetActive(true);
+        GuardActionsButtonsCanvas.SetActive(false);
         return;
     }
 
