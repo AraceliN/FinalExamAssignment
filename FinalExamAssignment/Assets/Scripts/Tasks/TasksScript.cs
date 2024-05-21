@@ -73,7 +73,7 @@ public class TaskTracker : MonoBehaviour
 
        }
 
-       if (other.CompareTag("Back Room"))
+       if (other.CompareTag("Backroom"))
 
        {
             backRoom = true;
