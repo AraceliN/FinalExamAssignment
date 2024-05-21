@@ -98,6 +98,7 @@ public class VanessaTileTracker : MonoBehaviour
         {
             VcurrentTile = "Girls";
             Vanessa.transform.position = GirlsBlue.position;
+            Debug.Log("Whoop");
         }
 
         else if (room.tag == "Arcade")

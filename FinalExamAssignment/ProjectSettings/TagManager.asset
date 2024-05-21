@@ -27,6 +27,12 @@ TagManager:
   - KitchenVent
   - EastHallVent
   - ControlroomVent
+  - GirlsBlue
+  - SupplyClosetBlue
+  - BackroomBlue
+  - KitchenBlue
+  - EastHallBlue
+  - ControlroomBlue
   layers:
   - Default
   - TransparentFX
