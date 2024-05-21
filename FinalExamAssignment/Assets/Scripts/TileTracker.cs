@@ -8,14 +8,111 @@ using Unity.VisualScripting;
 public class TileTracker : MonoBehaviour
 {
 
-    TileInfo currentTile;
-    List<TileInfo> TravelledTiles = new List<TileInfo>();
+    public string currentTile;
+    List<string> tiles = new List<string>();
+   // List<TileInfo> TravelledTiles = new List<TileInfo>();
 
     GameObject RoomCollider;
     GameObject character;
     Vector2 characterPos;
 
+
     public void OnTriggerEnter2D(Collider2D room)
+    {
+        if (room.tag == "Controlroom")
+        {
+            currentTile = "Controlroom";
+        }
+
+        else if (room.tag == "Stage")
+        {
+            currentTile = "Stage";
+        }
+
+        else if (room.tag == "SecurityOffice")
+        {
+            currentTile = "SecurityOffice";
+        }
+
+        else if (room.tag == "DiningArea")
+        {
+            currentTile = "DiningArea";
+        }
+
+        else if (room.tag == "Backroom")
+        {
+            currentTile = "Backroom";
+        }
+
+        else if (room.tag == "Unisex")
+        {
+            currentTile = "Unisex";
+        }
+
+        else if (room.tag == "Boys")
+        {
+            currentTile = "Boys";
+        }
+
+        else if (room.tag == "Girls")
+        {
+            currentTile = "Girls";
+        }
+
+        else if (room.tag == "Restrooms")
+        {
+            currentTile = "Restrooms";
+        }
+
+        else if (room.tag == "PirateCove")
+        {
+            currentTile = "PirateCove";
+        }
+
+        else if (room.tag == "SupplyCloset")
+        {
+            currentTile = "SupplyCloset";
+        }
+
+        else if (room.tag == "Arcade")
+        {
+            currentTile = "Arcade";
+        }
+
+        else if (room.tag == "WestHall")
+        {
+            currentTile = "WestHall";
+        }
+
+        else if (room.tag == "PrizeCorner")
+        {
+            currentTile = "PrizeCorner";
+        }
+
+        else if (room.tag == "EastHall")
+        {
+            currentTile = "EastHall";
+        }
+
+        else if (room.tag == "Kitchen")
+        {
+            currentTile = "Kitchen";
+        }
+
+        else if (room.tag == "Entrance")
+        {
+            currentTile = "Entrance";
+        }
+
+
+
+        tiles.Add(currentTile);
+        Debug.Log(currentTile);
+
+    }
+
+
+    /*public void OnTriggerEnter2D(Collider2D room)
     {
 
         if (room.tag == "ControlRoom")
@@ -95,7 +192,7 @@ public class TileTracker : MonoBehaviour
         TravelledTiles.Add(currentTile);
         Debug.Log(currentTile);
 
-    }
+    }*/
     //Adds the current Tile being stood on to the list
     //Make sure parent object at (0;0)
     /* public void AddTiles(List<TileInfo> travelledtiles )
@@ -350,8 +447,8 @@ public class TileTracker : MonoBehaviour
 
 
     // Finds the most recent item in the list
-    public void FindLast(List<TileInfo> travelledtiles)
+    public void FindLast(List<string> tiles)
     {
-        TravelledTiles.Last();
+        tiles.Last();
     }
 }
