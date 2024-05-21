@@ -12,6 +12,8 @@ public class SwitchScreenManager : MonoBehaviour
 
     public GameObject VanessaButtons;
     public GameObject AnimatronicButtons;
+    public GameObject GuardActionsButtonsCanvas;
+    public GameObject GuardActionButton;
 
     public GameObject GameView;
 
@@ -27,6 +29,9 @@ public class SwitchScreenManager : MonoBehaviour
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
         Vanessa.GetComponent<VPlayerMovement>().enabled = false;
+
+        GuardActionsButtonsCanvas.SetActive(false);
+        
 
         EndVanessaTurnButton.SetActive(false);
         StartVanessaTurnButton.SetActive(true);
@@ -47,6 +52,7 @@ public class SwitchScreenManager : MonoBehaviour
 
         GameView.SetActive(true);
         VanessaButtons.SetActive(true);
+        GuardActionButton.SetActive(true);
 
         EndVanessaTurnButton.SetActive(true);
     }
@@ -57,6 +63,7 @@ public class SwitchScreenManager : MonoBehaviour
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
         Vanessa.GetComponent<VPlayerMovement>().enabled = false;
+        GuardActionsButtonsCanvas.SetActive(false);
 
         EndVanessaTurnButton.SetActive(false);
 
