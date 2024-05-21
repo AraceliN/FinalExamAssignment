@@ -1252,7 +1252,7 @@ GameObject:
   - component: {fileID: 138060484}
   m_Layer: 0
   m_Name: ControlroomBlue
-  m_TagString: ControlroomVent
+  m_TagString: ControlroomBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3485,7 +3485,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &490292310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14139,7 +14139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1180456882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14741,7 +14741,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1269996705
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15891,7 +15891,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1466853905
 SpriteRenderer:
   m_ObjectHideFlags: 0
