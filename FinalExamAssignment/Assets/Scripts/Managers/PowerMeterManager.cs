@@ -16,7 +16,7 @@ public class PowerMeterManager : MonoBehaviour
 
     public void Update()
     {
-        if (PowerMeterScript.PowerMeter <= 0)
+        if (PowerMeterScript.PowerMeter <= -1)
         {
             GuardActionsButtonsCanvas.SetActive(false);
             PowerMeterCanvas.SetActive(false);
