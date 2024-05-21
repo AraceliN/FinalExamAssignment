@@ -91,4 +91,31 @@ public class SwitchScreenManager : MonoBehaviour
         StartVanessaTurnButton.SetActive(true);
     }
 
+
+
+
+
+    //Animatronic Turn
+
+    public void ChicaToMove()
+    {
+        Foxy.GetComponent<FoPlayerMovement>().enabled = false;
+        Chica.GetComponent<CPlayerMovement>().enabled = true;
+        Freddy.GetComponent<FrPlayerMovement>().enabled = false;
+    }
+
+    public void FoxyToMove()
+    {
+        Foxy.GetComponent<FoPlayerMovement>().enabled = true;
+        Chica.GetComponent<CPlayerMovement>().enabled = false;
+        Freddy.GetComponent<FrPlayerMovement>().enabled = false;
+    }
+
+    public void FreddyToMove()
+    {
+        Foxy.GetComponent<FoPlayerMovement>().enabled = false;
+        Chica.GetComponent<CPlayerMovement>().enabled = false;
+        Freddy.GetComponent<FrPlayerMovement>().enabled = true;
+    }
+
 }
