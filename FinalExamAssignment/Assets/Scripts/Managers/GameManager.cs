@@ -12,6 +12,12 @@ public class GameManager : MonoBehaviour
 
     public static event Action<Gamestate> OnGameStateChanged;
 
+    public GameObject AnimatronicTurnButton;
+    public GameObject EndATurnButton;
+
+    public GameObject VanessaTurnButton;
+    public GameObject EndVTurnButton;
+
     public void Awake()
     {
         Instance = this;
