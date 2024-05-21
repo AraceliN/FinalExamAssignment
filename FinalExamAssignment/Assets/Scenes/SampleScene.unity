@@ -2524,6 +2524,8 @@ GameObject:
   - component: {fileID: 490292311}
   - component: {fileID: 490292310}
   - component: {fileID: 490292309}
+  - component: {fileID: 490292313}
+  - component: {fileID: 490292314}
   m_Layer: 0
   m_Name: VanessaSprite
   m_TagString: Untagged
@@ -2670,6 +2672,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &490292313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490292308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c70376ef51c04438fd20d62649f8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 490292309}
+  playerSpeed: 4
+--- !u!114 &490292314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490292308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf024ae84ef4114c81b5b234be0a358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -11917,6 +11945,8 @@ GameObject:
   - component: {fileID: 1180456883}
   - component: {fileID: 1180456882}
   - component: {fileID: 1180456881}
+  - component: {fileID: 1180456885}
+  - component: {fileID: 1180456886}
   m_Layer: 0
   m_Name: FoxySprite
   m_TagString: Untagged
@@ -12063,6 +12093,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 275483962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180456885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180456880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcba2de48ce6ad448930414390c58633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 1180456881}
+  playerSpeed: 4
+--- !u!114 &1180456886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180456880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf024ae84ef4114c81b5b234be0a358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1213089636
 GameObject:
   m_ObjectHideFlags: 0
@@ -12444,6 +12500,7 @@ GameObject:
   - component: {fileID: 1269996705}
   - component: {fileID: 1269996704}
   - component: {fileID: 1269996703}
+  - component: {fileID: 1269996707}
   m_Layer: 0
   m_Name: FreddySprite
   m_TagString: Untagged
@@ -12590,6 +12647,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 275483962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269996707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269996702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a57e4981d3d630244baeb1931a6cb1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 1269996704}
+  playerSpeed: 4
 --- !u!1 &1282657116
 GameObject:
   m_ObjectHideFlags: 0
@@ -13368,6 +13439,8 @@ GameObject:
   - component: {fileID: 1466853905}
   - component: {fileID: 1466853904}
   - component: {fileID: 1466853903}
+  - component: {fileID: 1466853907}
+  - component: {fileID: 1466853908}
   m_Layer: 0
   m_Name: ChicaSprite
   m_TagString: Untagged
@@ -13514,6 +13587,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 275483962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1466853907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466853902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfd6650be213304f9216d551b3a6096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rb: {fileID: 1466853904}
+  playerSpeed: 4
+--- !u!114 &1466853908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466853902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf024ae84ef4114c81b5b234be0a358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536029347
 GameObject:
   m_ObjectHideFlags: 0
