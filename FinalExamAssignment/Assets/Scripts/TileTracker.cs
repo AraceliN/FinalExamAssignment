@@ -10,12 +10,41 @@ public class TileTracker : MonoBehaviour
 
     public string currentTile;
     List<string> tiles = new List<string>();
-   // List<TileInfo> TravelledTiles = new List<TileInfo>();
+    // List<TileInfo> TravelledTiles = new List<TileInfo>();
+
+
 
     GameObject RoomCollider;
-    GameObject character;
-    Vector2 characterPos;
+    GameObject Vanessa;
+    
 
+    public VanessaTileTracker vanessaTileTracker;
+    
+    Vector2 characterPos;
+    string AnimatronicTile;
+    string VcurrentTile;
+
+    public void Start()
+    {
+    
+        Vanessa.GetComponent<VanessaTileTracker>();
+        
+    }
+
+    public void Update()
+    {
+        AnimatronicTile = currentTile;
+        SameTileAsVanessa();
+        
+    }
+
+    public void SameTileAsVanessa()
+    {
+        if (AnimatronicTile == VcurrentTile)
+        {
+            Debug.Log("Oopsie you're dead");
+        }
+    }
 
     public void OnTriggerEnter2D(Collider2D room)
     {
