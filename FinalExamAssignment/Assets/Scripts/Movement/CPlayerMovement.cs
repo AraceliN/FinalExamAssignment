@@ -20,8 +20,6 @@ public class CPlayerMovement : MonoBehaviour
 
 
 
-    bool facingRight = true;
-
 
 
     void Update()
@@ -51,25 +49,6 @@ public class CPlayerMovement : MonoBehaviour
         }
 
 
-
-        if (movement.x > 0 && !facingRight)
-
-        {
-
-            Flip();
-
-        }
-
-
-
-        if (movement.x < 0 && facingRight)
-
-        {
-
-            Flip();
-
-        }
-
     }
 
 
@@ -82,22 +61,5 @@ public class CPlayerMovement : MonoBehaviour
 
     }
 
-
-
-    void Flip()
-
-    {
-
-        Vector3 currentScale = gameObject.transform.localScale;
-
-        currentScale.x *= -1;
-
-        gameObject.transform.localScale = currentScale;
-
-
-
-        facingRight = !facingRight;
-
-    }
 
 }

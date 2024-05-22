@@ -9,10 +9,12 @@ public class PowerMeterManager : MonoBehaviour
     public GameObject GuardActionsButtonsCanvas;
     public GameObject VanessaButtonCanvas;
     public GameObject LoseCanvas;
+    public GameObject WinCanvas;
     public GameObject GuardActionButton;
     public GameObject PowerMeterCanvas;
     public PowerMeterScript PowerMeterScript;
     public GameObject SwitchScreen;
+    public TaskHoursManager taskHoursManager;
 
     public void Update()
     {
@@ -23,6 +25,14 @@ public class PowerMeterManager : MonoBehaviour
             LoseCanvas.SetActive(true);
             SwitchScreen.SetActive(false);
 
+        }
+
+        else if (PowerMeterScript.PowerMeter >= 1 && taskHoursManager.totalHours == 6)
+        {
+            GuardActionsButtonsCanvas.SetActive(false);
+            PowerMeterCanvas.SetActive(false);
+            WinCanvas.SetActive(true);
+            SwitchScreen.SetActive(false);
         }
     }
 

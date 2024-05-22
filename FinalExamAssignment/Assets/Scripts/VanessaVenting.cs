@@ -6,7 +6,8 @@ using System.Linq;
 public class VanessaVenting : MonoBehaviour
 {
 
-    VanessaTileTracker VanessaTileTracker;
+    public VanessaTileTracker VanessaTileTracker;
+
     string VVent;
     List<string> Vvents = new List<string>();
 
@@ -24,7 +25,7 @@ public class VanessaVenting : MonoBehaviour
 
     private void Start()
     {
-        VanessaSprite.GetComponent<VPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
     public void OnTriggerEnter2D(Collider2D room)
@@ -80,13 +81,14 @@ public class VanessaVenting : MonoBehaviour
     }
 
     public void VentMovementDelay()
-    { 
+    {
+        
         StartCoroutine(OneSecondTimerVMovement());
     }
 
     IEnumerator OneSecondTimerVMovement()
     {
-        VanessaSprite.GetComponent<VPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
         countdownTime = 1;
         while (countdownTime > 0)
         {
@@ -97,6 +99,7 @@ public class VanessaVenting : MonoBehaviour
         }
 
 
-        VanessaSprite.GetComponent<VPlayerMovement>().enabled = true;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = true;
+
     }
 }

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+//using TMPro;
 using UnityEngine;
-using UnityEngine.Tilemaps;
+//using UnityEngine.Tilemaps;
 
 
 
@@ -10,16 +10,16 @@ public class VPlayerMovement : MonoBehaviour
 
 {
     public Rigidbody2D Rb;
-    public Tilemap floorTilemap;
+   // public Tilemap floorTilemap;
     public float playerSpeed = 4f;
     Vector2 movement;
-    public TextMeshProUGUI ActionPoints;
+    //public TextMeshProUGUI ActionPoints;
     public int actionPoints;
 
     public void Start()
     {
-        actionPoints = 5;
-        ActionPoints = GetComponent<TextMeshProUGUI>();
+     //   actionPoints = 5;
+      //  ActionPoints = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
@@ -39,7 +39,7 @@ public class VPlayerMovement : MonoBehaviour
         }
 
     }
-
+    /*
     private void Move(Vector2 direction)
     {
         if (PlayerMove(direction))
@@ -70,7 +70,7 @@ public class VPlayerMovement : MonoBehaviour
             ActionPoints.text = actionPoints.ToString();
             return false;
         }
-    }
+    }*/
 
     private void FixedUpdate()
     {

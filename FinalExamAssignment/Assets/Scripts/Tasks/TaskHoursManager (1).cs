@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using TMPro;
 
 public class TaskHoursManager : MonoBehaviour
 {
@@ -21,7 +22,15 @@ public class TaskHoursManager : MonoBehaviour
     [SerializeField]
     private int taskFive = 0;
 
+    public TMP_Text HoursTxt;
 
+    public TMP_Text Task1Label;
+    public TMP_Text Task2Label;
+    public TMP_Text Task3Label;
+    public TMP_Text Task4Label;
+    public TMP_Text Task5Label;
+
+    public int totalHours;
 
     bool freecam = false;
 
@@ -42,12 +51,13 @@ public class TaskHoursManager : MonoBehaviour
         taskFourChecker();
        // taskFiveChecker();
         HourChecker();
+        HoursTxt.text = totalHours.ToString() + "h";
     }
 
 
     public void HourChecker()
     {
-        int totalHours = taskOne + taskTwo + taskThree + taskFour /*+ taskFive*/;
+        totalHours = taskOne + taskTwo + taskThree + taskFour /*+ taskFive*/;
 
         if (totalHours >= 2)
         {
@@ -58,7 +68,7 @@ public class TaskHoursManager : MonoBehaviour
                 emergencydoor = 1;
                 if (totalHours == 6)
                 {
-                    gameManager.UpdateGameState(Gamestate.VanessaVictory);
+                    //gameManager.UpdateGameState(Gamestate.VanessaVictory);
                 }
             }
             else
@@ -66,7 +76,7 @@ public class TaskHoursManager : MonoBehaviour
                 emergencydoor = -1;
                 if (totalHours == 6)
                 {
-                    gameManager.UpdateGameState(Gamestate.VanessaVictory);
+                    //gameManager.UpdateGameState(Gamestate.VanessaVictory);
                 }
             }
         }
@@ -85,6 +95,7 @@ public class TaskHoursManager : MonoBehaviour
         if (taskOnedone == true)
         {
             taskOne = 2;
+            Task4Label.text = "";
         }
         else
         {
@@ -101,6 +112,7 @@ public class TaskHoursManager : MonoBehaviour
         if (taskTwodone == true)
         {
             taskTwo = 2;
+            Task1Label.text = "";
         }
         else
         {
@@ -117,6 +129,7 @@ public class TaskHoursManager : MonoBehaviour
         if (taskThreedone == true)
         {
             taskThree = 2;
+            Task2Label.text = "";
         }
         else
         {
@@ -133,6 +146,7 @@ public class TaskHoursManager : MonoBehaviour
         if (taskFourdone == true)
         {
             taskFour = 2;
+            Task3Label.text = "";
         }
         else
         {

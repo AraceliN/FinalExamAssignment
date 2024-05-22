@@ -33,6 +33,17 @@ TagManager:
   - KitchenBlue
   - EastHallBlue
   - ControlroomBlue
+  - ArcadeBlue
+  - EntranceBlue
+  - StageBlue
+  - SecurityOfficeBlue
+  - DiningAreaBlue
+  - BoysBlue
+  - UnisexBlue
+  - RestroomsBlue
+  - WestHallBlue
+  - PrizeCornerBlue
+  - PirateCoveBlue
   layers:
   - Default
   - TransparentFX

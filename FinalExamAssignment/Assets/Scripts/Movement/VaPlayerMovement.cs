@@ -6,7 +6,7 @@ using UnityEngine;
 
 
 
-public class FrPlayerMovement : MonoBehaviour
+public class VaPlayerMovement : MonoBehaviour
 
 {
 
@@ -20,6 +20,7 @@ public class FrPlayerMovement : MonoBehaviour
 
 
 
+    bool facingRight = true;
 
 
 
@@ -49,6 +50,26 @@ public class FrPlayerMovement : MonoBehaviour
 
         }
 
+
+
+        if (movement.x > 0 && !facingRight)
+
+        {
+
+            Flip();
+
+        }
+
+
+
+        if (movement.x < 0 && facingRight)
+
+        {
+
+            Flip();
+
+        }
+
     }
 
 
@@ -58,6 +79,23 @@ public class FrPlayerMovement : MonoBehaviour
     {
 
         Rb.MovePosition(Rb.position + movement * playerSpeed * Time.fixedDeltaTime);
+
+    }
+
+
+
+    void Flip()
+    {
+
+        Vector3 currentScale = gameObject.transform.localScale;
+
+        currentScale.x *= -1;
+
+        gameObject.transform.localScale = currentScale;
+
+
+
+        facingRight = !facingRight;
 
     }
 

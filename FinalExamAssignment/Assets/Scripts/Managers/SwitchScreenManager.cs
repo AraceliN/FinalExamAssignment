@@ -12,13 +12,15 @@ public class SwitchScreenManager : MonoBehaviour
 
     public GameObject VanessaButtons;
     public GameObject AnimatronicButtons;
+    public GameObject GuardActionsButtonsCanvas;
+    public GameObject GuardActionButton;
 
     public GameObject GameView;
 
     public GameObject Foxy;
     public GameObject Chica;
     public GameObject Freddy;
-    public GameObject Vanessa;
+    public GameObject VanessaSprite;
 
     // Start is called before the first frame update
     private void Start()
@@ -26,7 +28,9 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = false;
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
-        Vanessa.GetComponent<VPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
+
+        GuardActionsButtonsCanvas.SetActive(false);
 
         EndVanessaTurnButton.SetActive(false);
         StartVanessaTurnButton.SetActive(true);
@@ -41,12 +45,13 @@ public class SwitchScreenManager : MonoBehaviour
 
     public void StartVanessaTurn()
     {
-        Vanessa.GetComponent<VPlayerMovement>().enabled = true;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = true;
 
         StartVanessaTurnButton.SetActive(false);
 
         GameView.SetActive(true);
         VanessaButtons.SetActive(true);
+        GuardActionButton.SetActive(true);
 
         EndVanessaTurnButton.SetActive(true);
     }
@@ -56,8 +61,9 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = false;
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
-        Vanessa.GetComponent<VPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
 
+        GuardActionsButtonsCanvas.SetActive(false);
         EndVanessaTurnButton.SetActive(false);
 
         VanessaButtons.SetActive(false);
@@ -81,7 +87,7 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = false;
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
-        Vanessa.GetComponent<VPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
 
         EndAnimatronicTurnButton.SetActive(false);
 
@@ -102,6 +108,7 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = false;
         Chica.GetComponent<CPlayerMovement>().enabled = true;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
     public void FoxyToMove()
@@ -109,6 +116,7 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = true;
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
     public void FreddyToMove()
@@ -116,6 +124,7 @@ public class SwitchScreenManager : MonoBehaviour
         Foxy.GetComponent<FoPlayerMovement>().enabled = false;
         Chica.GetComponent<CPlayerMovement>().enabled = false;
         Freddy.GetComponent<FrPlayerMovement>().enabled = true;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
 }

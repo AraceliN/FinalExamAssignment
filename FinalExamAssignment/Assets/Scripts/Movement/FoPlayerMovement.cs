@@ -21,9 +21,6 @@ public class FoPlayerMovement : MonoBehaviour
 
 
 
-    bool facingRight = true;
-
-
 
     void Update()
 
@@ -51,26 +48,6 @@ public class FoPlayerMovement : MonoBehaviour
 
         }
 
-
-
-        if (movement.x > 0 && !facingRight)
-
-        {
-
-            Flip();
-
-        }
-
-
-
-        if (movement.x < 0 && facingRight)
-
-        {
-
-            Flip();
-
-        }
-
     }
 
 
@@ -80,23 +57,6 @@ public class FoPlayerMovement : MonoBehaviour
     {
 
         Rb.MovePosition(Rb.position + movement * playerSpeed * Time.fixedDeltaTime);
-
-    }
-
-
-
-    void Flip()
-    {
-
-        Vector3 currentScale = gameObject.transform.localScale;
-
-        currentScale.x *= -1;
-
-        gameObject.transform.localScale = currentScale;
-
-
-
-        facingRight = !facingRight;
 
     }
 
