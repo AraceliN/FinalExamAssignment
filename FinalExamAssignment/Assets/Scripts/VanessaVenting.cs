@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Timers;
 
 public class VanessaVenting : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class VanessaVenting : MonoBehaviour
     public Transform ControlroomBlue;
 
     public int countdownTime;
+    static Timer myTimer = new Timer(1000);
 
     private void Start()
     {
@@ -86,14 +88,16 @@ public class VanessaVenting : MonoBehaviour
 
     IEnumerator OneSecondTimerVMovement()
     {
+        
         VanessaSprite.GetComponent<VPlayerMovement>().enabled = false;
         countdownTime = 1;
+        //myTimer.Elapsed -= countdownTime;
         while (countdownTime > 0)
         {
 
             yield return new WaitForSeconds(1f);
-
             countdownTime--;
+            ;
         }
 
 

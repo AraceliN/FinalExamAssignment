@@ -33,6 +33,7 @@ public class TileTracker : MonoBehaviour
 
     public void Update()
     {
+        
         AnimatronicTile = currentTile;
         SameTileAsVanessa();
         
