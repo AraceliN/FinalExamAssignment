@@ -33,6 +33,8 @@ TagManager:
   - KitchenBlue
   - EastHallBlue
   - ControlroomBlue
+  - BoysBlue
+  - UnisexBlue
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class TaskHoursManager : MonoBehaviour
     [SerializeField]
     private int taskFive = 0;
 
-
+    public int totalHours;
 
     bool freecam = false;
 
@@ -47,7 +47,7 @@ public class TaskHoursManager : MonoBehaviour
 
     public void HourChecker()
     {
-        int totalHours = taskOne + taskTwo + taskThree + taskFour /*+ taskFive*/;
+        totalHours = taskOne + taskTwo + taskThree + taskFour /*+ taskFive*/;
 
         if (totalHours >= 2)
         {
