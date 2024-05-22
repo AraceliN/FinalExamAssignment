@@ -4517,6 +4517,7 @@ MonoBehaviour:
   taskFive: 0
   totalHours: 0
   gameManager: {fileID: 1282657117}
+  HoursTxt: {fileID: 293765047}
   taskOnedone: 0
   taskTwodone: 0
   taskThreedone: 0

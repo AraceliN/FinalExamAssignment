@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using TMPro;
 
 public class TaskHoursManager : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class TaskHoursManager : MonoBehaviour
 
     public GameManager gameManager;
 
+    public TMP_Text HoursTxt;
+
     private void Start()
     {
         gameManager = GetComponent<GameManager>();
@@ -42,6 +45,7 @@ public class TaskHoursManager : MonoBehaviour
         taskFourChecker();
        // taskFiveChecker();
         HourChecker();
+        HoursTxt.text = totalHours.ToString() +"h";
     }
 
 
@@ -58,7 +62,7 @@ public class TaskHoursManager : MonoBehaviour
                 emergencydoor = 1;
                 if (totalHours == 6)
                 {
-                    gameManager.UpdateGameState(Gamestate.VanessaVictory);
+                   // gameManager.UpdateGameState(Gamestate.VanessaVictory);
                 }
             }
             else
@@ -66,7 +70,7 @@ public class TaskHoursManager : MonoBehaviour
                 emergencydoor = -1;
                 if (totalHours == 6)
                 {
-                    gameManager.UpdateGameState(Gamestate.VanessaVictory);
+                    //gameManager.UpdateGameState(Gamestate.VanessaVictory);
                 }
             }
         }
