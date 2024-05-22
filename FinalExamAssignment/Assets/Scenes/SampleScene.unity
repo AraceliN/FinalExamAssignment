@@ -3582,6 +3582,7 @@ GameObject:
   - component: {fileID: 490292313}
   - component: {fileID: 490292314}
   - component: {fileID: 490292315}
+  - component: {fileID: 490292316}
   m_Layer: 0
   m_Name: VanessaSprite
   m_TagString: Untagged
@@ -3776,6 +3777,24 @@ MonoBehaviour:
   SupplyClosetBlue: {fileID: 25801865}
   ControlroomBlue: {fileID: 138060483}
   countdownTime: 0
+--- !u!114 &490292316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490292308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b84dcdd04c4ea4683d3f7c42ccb516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  westHall: 0
+  backRoom: 0
+  blueblockInBoysBathroom: 0
+  blueblockInGirlsBathroom: 0
+  blueblockInUnisexBathroom: 0
+  taskHoursManager: {fileID: 518619850}
 --- !u!1 &511525013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3916,7 +3935,6 @@ GameObject:
   m_Component:
   - component: {fileID: 518619851}
   - component: {fileID: 518619850}
-  - component: {fileID: 518619849}
   m_Layer: 0
   m_Name: TaskManager
   m_TagString: Untagged
@@ -3924,18 +3942,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &518619849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518619848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4b84dcdd04c4ea4683d3f7c42ccb516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &518619850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3953,6 +3959,7 @@ MonoBehaviour:
   taskThree: 0
   taskFour: 0
   taskFive: 0
+  totalHours: 0
   gameManager: {fileID: 1282657117}
   taskOnedone: 0
   taskTwodone: 0

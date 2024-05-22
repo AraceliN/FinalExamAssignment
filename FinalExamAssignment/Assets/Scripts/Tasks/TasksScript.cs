@@ -23,7 +23,7 @@ public class TaskTracker : MonoBehaviour
 
     public void Start()
     {
-        taskHoursManager = GetComponent<TaskHoursManager>();
+       
         //Task2();
     }
 
