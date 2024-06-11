@@ -15,6 +15,8 @@ public class SwitchScreenManager : MonoBehaviour
     public GameObject GuardActionsButtonsCanvas;
     public GameObject GuardActionButton;
 
+    public GameObject VanessaTurnButton; //new
+
     public GameObject GameView;
 
     public GameObject Foxy;
@@ -41,6 +43,8 @@ public class SwitchScreenManager : MonoBehaviour
 
         VanessaButtons.SetActive(false);
         AnimatronicButtons.SetActive(false);
+
+        VanessaTurnButton.SetActive(false); //the tutorial will play before gameplay begins. the button will be set active by the last panel of the tutorial.
     }
 
     public void StartVanessaTurn()
