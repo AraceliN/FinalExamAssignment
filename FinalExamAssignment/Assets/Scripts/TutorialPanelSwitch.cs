@@ -16,6 +16,7 @@ public class TutorialPanelSwitch : MonoBehaviour
     
     void Start()
     {
+        panel0.SetActive(true);
         panel1.SetActive(false);
         panel2.SetActive(false);    
         panel3.SetActive(false);
