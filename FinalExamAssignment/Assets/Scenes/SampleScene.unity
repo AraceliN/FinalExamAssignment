@@ -3474,6 +3474,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1269996709}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1180456887}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466853909}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 490292320}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeInVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &304395073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4822,6 +4870,7 @@ GameObject:
   - component: {fileID: 490292317}
   - component: {fileID: 490292318}
   - component: {fileID: 490292319}
+  - component: {fileID: 490292320}
   m_Layer: 0
   m_Name: VanessaSprite
   m_TagString: Untagged
@@ -5035,8 +5084,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VcurrentTile: 
+  Chicatiletracker: {fileID: 0}
+  Foxytiletracker: {fileID: 0}
+  Freddytiletracker: {fileID: 0}
   Vanessa: {fileID: 490292312}
   GirlsBlue: {fileID: 0}
+--- !u!114 &490292320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490292308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22f5ad5b16302345a1751402688bd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 490292308}
+  spriteRenderer: {fileID: 490292311}
+  transparency: 0
 --- !u!1 &490368731
 GameObject:
   m_ObjectHideFlags: 0
@@ -16879,6 +16946,7 @@ Transform:
   m_Children:
   - {fileID: 544064941}
   - {fileID: 965672613}
+  - {fileID: 1376580958}
   - {fileID: 336949989}
   m_Father: {fileID: 1170099107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16969,6 +17037,7 @@ GameObject:
   - component: {fileID: 1180456881}
   - component: {fileID: 1180456885}
   - component: {fileID: 1180456886}
+  - component: {fileID: 1180456887}
   m_Layer: 0
   m_Name: FoxySprite
   m_TagString: Untagged
@@ -17142,6 +17211,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+--- !u!114 &1180456887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180456880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22f5ad5b16302345a1751402688bd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1180456880}
+  spriteRenderer: {fileID: 1180456883}
+  transparency: 0
 --- !u!1 &1213089636
 GameObject:
   m_ObjectHideFlags: 0
@@ -17526,6 +17610,7 @@ GameObject:
   - component: {fileID: 1269996703}
   - component: {fileID: 1269996708}
   - component: {fileID: 1269996707}
+  - component: {fileID: 1269996709}
   m_Layer: 0
   m_Name: FreddySprite
   m_TagString: Untagged
@@ -17699,6 +17784,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+--- !u!114 &1269996709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269996702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22f5ad5b16302345a1751402688bd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1269996702}
+  spriteRenderer: {fileID: 1269996705}
+  transparency: 0
 --- !u!1 &1282657116
 GameObject:
   m_ObjectHideFlags: 0
@@ -18674,6 +18774,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371873759}
   m_CullTransparentMesh: 1
+--- !u!1 &1376580957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376580958}
+  m_Layer: 0
+  m_Name: Hallway Colliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376580958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376580957}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1165114777}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392127457
 GameObject:
   m_ObjectHideFlags: 0
@@ -19214,6 +19345,7 @@ GameObject:
   - component: {fileID: 1466853903}
   - component: {fileID: 1466853907}
   - component: {fileID: 1466853908}
+  - component: {fileID: 1466853909}
   m_Layer: 0
   m_Name: ChicaSprite
   m_TagString: Untagged
@@ -19387,6 +19519,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+--- !u!114 &1466853909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466853902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22f5ad5b16302345a1751402688bd53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1466853902}
+  spriteRenderer: {fileID: 1466853905}
+  transparency: 0
 --- !u!1 &1480509890
 GameObject:
   m_ObjectHideFlags: 0
@@ -19473,6 +19620,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1338054685}
         m_TargetAssemblyTypeName: SwitchScreenManager, Assembly-CSharp
         m_MethodName: EndAnimatronicTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 245067645}
+        m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
+        m_MethodName: NextRound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23956,6 +24115,54 @@ MonoBehaviour:
       - m_Target: {fileID: 245067645}
         m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
         m_MethodName: VanessaTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466853909}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeInVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1180456887}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeInVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1269996709}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeInVisible
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 490292320}
+        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_MethodName: MakeVisible
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
