@@ -5104,6 +5104,7 @@ MonoBehaviour:
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
@@ -17232,6 +17233,7 @@ MonoBehaviour:
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
@@ -17811,6 +17813,7 @@ MonoBehaviour:
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
@@ -19552,6 +19555,7 @@ MonoBehaviour:
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
