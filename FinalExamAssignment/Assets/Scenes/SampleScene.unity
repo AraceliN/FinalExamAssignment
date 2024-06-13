@@ -3475,48 +3475,48 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269996709}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1269996705}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1180456887}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1180456883}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1466853909}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1466853905}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 490292320}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeInVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 490292311}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5084,9 +5084,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VcurrentTile: 
-  Chicatiletracker: {fileID: 0}
-  Foxytiletracker: {fileID: 0}
-  Freddytiletracker: {fileID: 0}
   Vanessa: {fileID: 490292312}
   GirlsBlue: {fileID: 0}
 --- !u!114 &490292320
@@ -5102,8 +5099,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 490292308}
-  spriteRenderer: {fileID: 490292311}
   transparency: 0
+  tileTracker: {fileID: 490292319}
+  Chicatiletracker: {fileID: 1466853908}
+  Foxytiletracker: {fileID: 1180456886}
+  Freddytiletracker: {fileID: 1269996708}
+  ChicaSprite: {fileID: 1466853905}
+  FoxySprite: {fileID: 1180456883}
+  FreddySprite: {fileID: 1269996705}
 --- !u!1 &490368731
 GameObject:
   m_ObjectHideFlags: 0
@@ -17224,8 +17227,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1180456880}
-  spriteRenderer: {fileID: 1180456883}
   transparency: 0
+  tileTracker: {fileID: 490292319}
+  Chicatiletracker: {fileID: 1466853908}
+  Foxytiletracker: {fileID: 1180456886}
+  Freddytiletracker: {fileID: 1269996708}
+  ChicaSprite: {fileID: 1466853905}
+  FoxySprite: {fileID: 1180456883}
+  FreddySprite: {fileID: 1269996705}
 --- !u!1 &1213089636
 GameObject:
   m_ObjectHideFlags: 0
@@ -17797,8 +17806,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1269996702}
-  spriteRenderer: {fileID: 1269996705}
   transparency: 0
+  tileTracker: {fileID: 490292319}
+  Chicatiletracker: {fileID: 1466853908}
+  Foxytiletracker: {fileID: 1180456886}
+  Freddytiletracker: {fileID: 1269996708}
+  ChicaSprite: {fileID: 1466853905}
+  FoxySprite: {fileID: 1180456883}
+  FreddySprite: {fileID: 1269996705}
 --- !u!1 &1282657116
 GameObject:
   m_ObjectHideFlags: 0
@@ -19532,8 +19547,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 1466853902}
-  spriteRenderer: {fileID: 1466853905}
   transparency: 0
+  tileTracker: {fileID: 490292319}
+  Chicatiletracker: {fileID: 1466853908}
+  Foxytiletracker: {fileID: 1180456886}
+  Freddytiletracker: {fileID: 1269996708}
+  ChicaSprite: {fileID: 1466853905}
+  FoxySprite: {fileID: 1180456883}
+  FreddySprite: {fileID: 1269996705}
 --- !u!1 &1480509890
 GameObject:
   m_ObjectHideFlags: 0
@@ -24125,48 +24146,48 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1466853909}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeInVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1466853905}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1180456887}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeInVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1180456883}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1269996709}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeInVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1269996705}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 490292320}
-        m_TargetAssemblyTypeName: AnimatronicVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
         m_MethodName: MakeVisible
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 490292311}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

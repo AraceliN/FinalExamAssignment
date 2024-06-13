@@ -76,7 +76,7 @@ public class VanessaVenting : MonoBehaviour
 
 
         Vvents.Add(VVent);
-        Debug.Log(VVent);
+        Debug.Log(VVent +"Vent");
 
     }
 

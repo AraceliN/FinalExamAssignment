@@ -15,11 +15,10 @@ public class VanessaTileTracker : MonoBehaviour
     GameObject RoomCollider;
     GameObject character;
     Vector2 characterPos;
+
     
 
-    public TileTracker Chicatiletracker;
-    public TileTracker Foxytiletracker;
-    public TileTracker Freddytiletracker;
+    private CharacterVisibility characterVisibility;
 
 
     GameObject Kitchenvent;
@@ -27,6 +26,11 @@ public class VanessaTileTracker : MonoBehaviour
     public Transform Vanessa;
     public Transform GirlsBlue;
 
+
+    public void Update()
+    {
+       
+    }
 
     public void OnTriggerEnter2D(Collider2D room)
     {
@@ -154,22 +158,7 @@ public class VanessaTileTracker : MonoBehaviour
 
     }
 
-    public void checkAnimatronicTile()
-    {
-        if (VcurrentTile == Freddytiletracker.currentTile)
-        {
-
-        }
-        if (VcurrentTile == Foxytiletracker.currentTile)
-        {
-
-        }
-        if (VcurrentTile == Chicatiletracker.currentTile)
-        {
-
-        }
-
-    }
+    
     
     public void FindLast(List<string> tiles)
     {
