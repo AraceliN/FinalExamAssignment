@@ -2944,6 +2944,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1002140575}
+        m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
+        m_MethodName: AnimatronicTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &304395073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15151,6 +15163,7 @@ MonoBehaviour:
   roundNumber: 0
   EndAnimatronicTurnButton: {fileID: 1480509890}
   roundNumberTxt: {fileID: 509333980}
+  isVanessaTurn: 0
 --- !u!1 &1116006853
 GameObject:
   m_ObjectHideFlags: 0
@@ -17795,6 +17808,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1002140575}
+        m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
+        m_MethodName: NextRound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1480509893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20403,6 +20428,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1338054685}
         m_TargetAssemblyTypeName: SwitchScreenManager, Assembly-CSharp
         m_MethodName: StartVanessaTurn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1002140575}
+        m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
+        m_MethodName: VanessaTurn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
