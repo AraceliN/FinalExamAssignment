@@ -13,6 +13,7 @@ public class CharacterVisibility : MonoBehaviour
     public TileTracker Foxytiletracker;
     public TileTracker Freddytiletracker;
 
+    public SpriteRenderer VanessaSprite;
     public SpriteRenderer ChicaSprite;
     public SpriteRenderer FoxySprite;
     public SpriteRenderer FreddySprite;
@@ -40,16 +41,19 @@ public class CharacterVisibility : MonoBehaviour
         if (tileTracker.VcurrentTile == Freddytiletracker.currentTile)
         {
             MakeVisible(FreddySprite);
+            MakeVisible(VanessaSprite);
         }
 
         if (tileTracker.VcurrentTile == Foxytiletracker.currentTile)
         {
             MakeVisible(FoxySprite);
+            MakeVisible(VanessaSprite);
         }
 
         if (tileTracker.VcurrentTile == Chicatiletracker.currentTile)
         {
             MakeVisible(ChicaSprite);
+            MakeVisible(VanessaSprite);
         }
 
     }
