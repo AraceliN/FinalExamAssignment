@@ -8,6 +8,9 @@ public class RoundTracker : MonoBehaviour
     public int roundNumber;
 
     public GameObject EndAnimatronicTurnButton;
+    public GameObject AnimatronicTurnButton;
+    public GameObject VanessaTurnButton;
+
     public TextMeshProUGUI roundNumberTxt;
     public bool isVanessaTurn;
 
