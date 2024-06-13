@@ -79,7 +79,7 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "Boys";
         }
 
-        else if (room.tag == "Girls") 
+        else if (room.tag == "Girls")
         {
             VcurrentTile = "Girls";
         }
@@ -151,11 +151,32 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "Entrance";
         }
 
+        //Hallways
+
+        else if (room.tag == "")
+        {
+            VcurrentTile = "";
+        }
+
+        else if (room.tag == "") 
+        {
+            VcurrentTile = "";
+        }
+
+        else if (room.tag == "")
+        {
+            VcurrentTile = "";
+        }
+
+        else if (room.tag == "")
+        {
+            VcurrentTile = "";
 
 
-        Vtiles.Add(VcurrentTile);
-        Debug.Log(VcurrentTile);
-
+        }
+            Vtiles.Add(VcurrentTile);
+            Debug.Log(VcurrentTile);
+        
     }
 
     

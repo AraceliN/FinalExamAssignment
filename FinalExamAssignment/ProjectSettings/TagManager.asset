@@ -44,6 +44,24 @@ TagManager:
   - WestHallBlue
   - PrizeCornerBlue
   - PirateCoveBlue
+  - HallwayS-W
+  - HallwayW-P
+  - HallwayP-W
+  - HallwayE-P
+  - HallwayA-E
+  - HallwayE-K
+  - HallwayK-R
+  - HallwayB-R
+  - HallwayG-R
+  - HallwayR-U
+  - HallwayE-S-R
+  - HallwayC-E
+  - HallwayC-S
+  - HallwayA-S
+  - HallwayS-S
+  - HallwayD-S
+  - HallwayA-D
+  - HallwayB-D-P
   layers:
   - Default
   - TransparentFX
