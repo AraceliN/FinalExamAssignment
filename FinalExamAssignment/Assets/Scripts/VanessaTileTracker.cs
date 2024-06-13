@@ -16,11 +16,21 @@ public class VanessaTileTracker : MonoBehaviour
     GameObject character;
     Vector2 characterPos;
 
+    
+
+    private CharacterVisibility characterVisibility;
+
+
     GameObject Kitchenvent;
 
     public Transform Vanessa;
     public Transform GirlsBlue;
 
+
+    public void Update()
+    {
+       
+    }
 
     public void OnTriggerEnter2D(Collider2D room)
     {
@@ -69,7 +79,7 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "Boys";
         }
 
-        else if (room.tag == "Girls") 
+        else if (room.tag == "Girls")
         {
             VcurrentTile = "Girls";
         }
@@ -141,14 +151,35 @@ public class VanessaTileTracker : MonoBehaviour
             VcurrentTile = "Entrance";
         }
 
+        //Hallways
+
+        else if (room.tag == "HallwayS-W")
+        {
+            VcurrentTile = "HallwayS-W";
+        }
+
+        else if (room.tag == "") 
+        {
+            VcurrentTile = "";
+        }
+
+        else if (room.tag == "")
+        {
+            VcurrentTile = "";
+        }
+
+        else if (room.tag == "")
+        {
+            VcurrentTile = "";
 
 
-        Vtiles.Add(VcurrentTile);
-        Debug.Log(VcurrentTile);
-
+        }
+            Vtiles.Add(VcurrentTile);
+            Debug.Log(VcurrentTile);
+        
     }
 
-
+    
     
     public void FindLast(List<string> tiles)
     {
