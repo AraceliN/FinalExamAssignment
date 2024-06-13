@@ -15,6 +15,12 @@ public class PowerMeterManager : MonoBehaviour
     public PowerMeterScript PowerMeterScript;
     public GameObject SwitchScreen;
     public TaskHoursManager taskHoursManager;
+    public GameObject DoorsDropdown;
+
+    private void Start()
+    {
+        DoorsDropdown.SetActive(false);
+    }
 
     public void Update()
     {
@@ -59,7 +65,8 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 1;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
-        GuardActionButton.SetActive(true);
+        //GuardActionButton.SetActive(true); //instead the dropdown where the player will enable only two doors will be set active,after that the guard actions button will then be enabled. 
+        DoorsDropdown.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);
         return;
     }
