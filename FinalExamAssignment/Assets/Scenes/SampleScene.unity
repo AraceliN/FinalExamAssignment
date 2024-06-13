@@ -4821,6 +4821,7 @@ GameObject:
   - component: {fileID: 490292316}
   - component: {fileID: 490292317}
   - component: {fileID: 490292318}
+  - component: {fileID: 490292319}
   m_Layer: 0
   m_Name: VanessaSprite
   m_TagString: Untagged
@@ -4997,7 +4998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42777b530eba8c041b3de2a306c9fd90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VanessaTileTracker: {fileID: 0}
+  VanessaTileTracker: {fileID: 490292319}
   VanessaSprite: {fileID: 490292308}
   Vanessa: {fileID: 490292312}
   GirlsBlue: {fileID: 303363698}
@@ -5021,6 +5022,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rb: {fileID: 490292309}
   playerSpeed: 4
+--- !u!114 &490292319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490292308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087924e1615913741b4be881873f9601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VcurrentTile: 
+  Vanessa: {fileID: 490292312}
+  GirlsBlue: {fileID: 0}
 --- !u!1 &490368731
 GameObject:
   m_ObjectHideFlags: 0
