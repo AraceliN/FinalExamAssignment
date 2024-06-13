@@ -65,7 +65,7 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 1;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
-        //GuardActionButton.SetActive(true); //instead the dropdown where the player will enable only two doors will be set active,after that the guard actions button will then be enabled. 
+        //GuardActionButton.SetActive(true); //instead the dropdown where the player will enable only two doors will be set active,after that the guard actions button will then be enabled when 2 doors have been selected from the dropdown. 
         DoorsDropdown.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);
         return;
