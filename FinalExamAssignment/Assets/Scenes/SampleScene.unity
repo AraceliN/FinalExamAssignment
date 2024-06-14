@@ -1320,6 +1320,7 @@ MonoBehaviour:
   gameObject: {fileID: 31979392}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &31979395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2637,6 +2638,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 0}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -3509,6 +3511,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -4897,6 +4900,7 @@ MonoBehaviour:
   gameObject: {fileID: 326501539}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &326501542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6090,6 +6094,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -12094,6 +12099,7 @@ MonoBehaviour:
   gameObject: {fileID: 752296252}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &752296255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12684,6 +12690,7 @@ MonoBehaviour:
   gameObject: {fileID: 824587877}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &824587880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13037,6 +13044,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -14338,6 +14346,7 @@ MonoBehaviour:
   gameObject: {fileID: 916532430}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &916532433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14893,6 +14902,7 @@ MonoBehaviour:
   gameObject: {fileID: 944250933}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &944250936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15183,6 +15193,7 @@ MonoBehaviour:
   gameObject: {fileID: 952921557}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &952921560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20933,6 +20944,7 @@ MonoBehaviour:
   gameObject: {fileID: 1050083002}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1050083005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21661,6 +21673,7 @@ MonoBehaviour:
   gameObject: {fileID: 1134932873}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1134932876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23621,6 +23634,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -23795,6 +23809,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
@@ -24459,6 +24474,7 @@ MonoBehaviour:
   gameObject: {fileID: 1386723142}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1386723145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25163,6 +25179,7 @@ MonoBehaviour:
   gameObject: {fileID: 1417071354}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1417071357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26990,6 +27007,7 @@ MonoBehaviour:
   gameObject: {fileID: 1596813387}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1596813390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27563,6 +27581,7 @@ MonoBehaviour:
   gameObject: {fileID: 1616041258}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1616041261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27721,6 +27740,7 @@ MonoBehaviour:
   gameObject: {fileID: 1616240700}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1616240703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28330,6 +28350,7 @@ MonoBehaviour:
   gameObject: {fileID: 1671748700}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1671748703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28488,6 +28509,7 @@ MonoBehaviour:
   gameObject: {fileID: 1672563539}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &1672563542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29109,6 +29131,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 293765046}
   SwitchScreen: {fileID: 700963334}
@@ -31782,6 +31805,7 @@ MonoBehaviour:
   gameObject: {fileID: 2032670531}
   GuardActionButton: {fileID: 538849307}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!114 &2032670534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32262,6 +32286,7 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}

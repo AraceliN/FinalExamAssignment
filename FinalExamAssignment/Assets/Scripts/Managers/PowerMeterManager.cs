@@ -13,6 +13,7 @@ public class PowerMeterManager : MonoBehaviour
     public GameObject GuardActionButton;
     public GameObject PowerMeterCanvas;
     public GameObject EndVanessaTurnButton;
+    public GameObject Vanessa;
 
     public GameObject CameraButtons;
 
@@ -70,6 +71,7 @@ public class PowerMeterManager : MonoBehaviour
         GuardActionsButtonsCanvas.SetActive(false);
         CameraButtons.SetActive(true);
         EndVanessaTurnButton.SetActive(false);
+        Vanessa.SetActive(false);
         return;
 
     }

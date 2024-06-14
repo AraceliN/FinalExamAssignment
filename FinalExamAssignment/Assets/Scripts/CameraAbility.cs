@@ -20,6 +20,7 @@ public class CameraAbility : MonoBehaviour
     public GameObject gameObject;
     public GameObject GuardActionButton;
     public GameObject EndVanessaTurnButton;
+    public GameObject Vanessa;
 
     public void checkCamera()
     {
@@ -47,6 +48,7 @@ public class CameraAbility : MonoBehaviour
         GuardActionButton.SetActive(true);
         CameraButtons.SetActive(false);
         EndVanessaTurnButton.SetActive(true);
+        Vanessa.SetActive(true);
     }
 
     
