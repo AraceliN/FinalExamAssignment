@@ -18522,6 +18522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+  Sprite: {fileID: 1180456883}
 --- !u!114 &1180456887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19102,6 +19103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+  Sprite: {fileID: 1269996705}
 --- !u!114 &1269996709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21076,6 +21078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
+  Sprite: {fileID: 1466853905}
 --- !u!114 &1466853909
 MonoBehaviour:
   m_ObjectHideFlags: 0

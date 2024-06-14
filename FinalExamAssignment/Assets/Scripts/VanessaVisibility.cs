@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterVisibility : MonoBehaviour
+public class VanessaVisibility : MonoBehaviour
 {
-
     public GameObject character;
     public float transparency;
 
@@ -12,7 +11,6 @@ public class CharacterVisibility : MonoBehaviour
     public TileTracker Chicatiletracker;
     public TileTracker Foxytiletracker;
     public TileTracker Freddytiletracker;
-    public TileTracker Tiletracker;
 
 
     public SpriteRenderer VanessaSprite;
@@ -26,12 +24,12 @@ public class CharacterVisibility : MonoBehaviour
     {
         checkAnimatronicTile();
         CheckHallways();
-        
+
     }
 
     public void MakeVisible(SpriteRenderer spriteRenderer)
     {
-       Color col = spriteRenderer.color;
+        Color col = spriteRenderer.color;
         col.a = 255;
         spriteRenderer.color = col;
     }
@@ -44,10 +42,11 @@ public class CharacterVisibility : MonoBehaviour
 
     public void CheckHallways()
     {
-        if (Tiletracker.currentTile == "HallwayB-D-P" || Tiletracker.currentTile == "HallwayA-D" || Tiletracker.currentTile == "HallwayD-S" || Tiletracker.currentTile == "HallwayS-S" || Tiletracker.currentTile == "HallwayA-S" ||
-            Tiletracker.currentTile == "HallwayC-S" || Tiletracker.currentTile == "HallwayC-E" || Tiletracker.currentTile == "HallwayE-S-R" || Tiletracker.currentTile == "HallwayR-U" || Tiletracker.currentTile == "HallwayG-R" || 
-            Tiletracker.currentTile == "HallwayB-R" || Tiletracker.currentTile == "HallwayK-R"|| Tiletracker.currentTile == "HallwayE-K" || Tiletracker.currentTile == "HallwayA-E" || Tiletracker.currentTile == "HallwayE-P" ||
-            Tiletracker.currentTile == "HallwayW-P" || Tiletracker.currentTile == "HallwayS-W")
+        if (VanessaTileTracker.VcurrentTile == "HallwayB-D-P" || VanessaTileTracker.VcurrentTile == "HallwayA-D" || VanessaTileTracker.VcurrentTile == "HallwayD-S" || VanessaTileTracker.VcurrentTile == "HallwayS-S" || 
+            VanessaTileTracker.VcurrentTile == "HallwayA-S" ||  VanessaTileTracker.VcurrentTile == "HallwayC-S" || VanessaTileTracker.VcurrentTile == "HallwayC-E" || VanessaTileTracker.VcurrentTile == "HallwayE-S-R" ||
+            VanessaTileTracker.VcurrentTile == "HallwayR-U" || VanessaTileTracker.VcurrentTile == "HallwayG-R" ||  VanessaTileTracker.VcurrentTile == "HallwayB-R" || VanessaTileTracker.VcurrentTile == "HallwayK-R" || 
+            VanessaTileTracker.VcurrentTile == "HallwayE-K" || VanessaTileTracker.VcurrentTile == "HallwayA-E" || VanessaTileTracker.VcurrentTile == "HallwayE-P" ||
+            VanessaTileTracker.VcurrentTile == "HallwayW-P" || VanessaTileTracker.VcurrentTile == "HallwayS-W")
         {
             MakeVisible(SpriteRenderer);
         }
@@ -74,5 +73,3 @@ public class CharacterVisibility : MonoBehaviour
 
     }
 }
-
-

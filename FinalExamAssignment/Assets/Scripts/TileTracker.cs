@@ -19,7 +19,7 @@ public class TileTracker : MonoBehaviour
 
     private CharacterVisibility characterVisibility;
 
-    public void Update()
+   /* public void Update()
     {
         if (currentTile =="HallwayB-D-P" || currentTile == "HallwayA-D" || currentTile == "HallwayD-S" ||currentTile == "HallwayS-S" || currentTile == "HallwayA-S"   ||  currentTile == "HallwayC-S"  
             ||  currentTile == "HallwayC-E" || currentTile == "HallwayE-S-R"       ||  currentTile == "HallwayR-U" ||  currentTile == "HallwayG-R" || currentTile == "HallwayB-R"  || currentTile == "HallwayK-R" 
@@ -28,7 +28,7 @@ public class TileTracker : MonoBehaviour
             characterVisibility.MakeVisible(Sprite);
         }
         
-    }
+    }*/
 
     public void OnTriggerEnter2D(Collider2D room)
     {
