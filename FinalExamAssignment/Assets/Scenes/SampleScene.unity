@@ -4162,7 +4162,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 490292320}
-        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: VanessaVisibility, Assembly-CSharp
         m_MethodName: MakeInVisible
         m_Mode: 2
         m_Arguments:
@@ -5519,9 +5519,9 @@ GameObject:
   - component: {fileID: 490292309}
   - component: {fileID: 490292316}
   - component: {fileID: 490292317}
+  - component: {fileID: 490292320}
   - component: {fileID: 490292318}
   - component: {fileID: 490292319}
-  - component: {fileID: 490292320}
   m_Layer: 0
   m_Name: VanessaSprite
   m_TagString: Untagged
@@ -5746,12 +5746,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 490292308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f22f5ad5b16302345a1751402688bd53, type: 3}
+  m_Script: {fileID: 11500000, guid: e09fb5dd7f82de044a4094abf25a3f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 490292308}
   transparency: 0
-  tileTracker: {fileID: 490292319}
+  VanessaTileTracker: {fileID: 490292319}
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
@@ -5759,6 +5759,7 @@ MonoBehaviour:
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
+  SpriteRenderer: {fileID: 490292311}
 --- !u!1 &490368731
 GameObject:
   m_ObjectHideFlags: 0
@@ -18537,14 +18538,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1180456880}
   transparency: 0
-  tileTracker: {fileID: 490292319}
+  VanessaTileTracker: {fileID: 490292319}
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  Tiletracker: {fileID: 1180456886}
   VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
+  SpriteRenderer: {fileID: 1180456883}
 --- !u!1 &1213089636
 GameObject:
   m_ObjectHideFlags: 0
@@ -19118,14 +19121,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1269996702}
   transparency: 0
-  tileTracker: {fileID: 490292319}
+  VanessaTileTracker: {fileID: 490292319}
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  Tiletracker: {fileID: 1269996708}
   VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
+  SpriteRenderer: {fileID: 1269996705}
 --- !u!1 &1282657116
 GameObject:
   m_ObjectHideFlags: 0
@@ -21093,14 +21098,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 1466853902}
   transparency: 0
-  tileTracker: {fileID: 490292319}
+  VanessaTileTracker: {fileID: 490292319}
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  Tiletracker: {fileID: 1466853908}
   VanessaSprite: {fileID: 490292311}
   ChicaSprite: {fileID: 1466853905}
   FoxySprite: {fileID: 1180456883}
   FreddySprite: {fileID: 1269996705}
+  SpriteRenderer: {fileID: 1466853905}
 --- !u!1 &1480509890
 GameObject:
   m_ObjectHideFlags: 0
@@ -26593,7 +26600,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 490292320}
-        m_TargetAssemblyTypeName: CharacterVisibility, Assembly-CSharp
+        m_TargetAssemblyTypeName: VanessaVisibility, Assembly-CSharp
         m_MethodName: MakeVisible
         m_Mode: 2
         m_Arguments:
