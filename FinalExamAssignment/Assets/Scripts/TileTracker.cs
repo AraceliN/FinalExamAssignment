@@ -13,9 +13,22 @@ public class TileTracker : MonoBehaviour
    // List<TileInfo> TravelledTiles = new List<TileInfo>();
 
     GameObject RoomCollider;
-    GameObject character;
+   GameObject character;
     Vector2 characterPos;
+    public SpriteRenderer Sprite;
 
+    private CharacterVisibility characterVisibility;
+
+    public void Update()
+    {
+        if (currentTile =="HallwayB-D-P" || currentTile == "HallwayA-D" || currentTile == "HallwayD-S" ||currentTile == "HallwayS-S" || currentTile == "HallwayA-S"   ||  currentTile == "HallwayC-S"  
+            ||  currentTile == "HallwayC-E" || currentTile == "HallwayE-S-R"       ||  currentTile == "HallwayR-U" ||  currentTile == "HallwayG-R" || currentTile == "HallwayB-R"  || currentTile == "HallwayK-R" 
+            || currentTile == "HallwayE-K"  || currentTile == "HallwayA-E"    || currentTile == "HallwayE-P"   ||currentTile == "HallwayW-P"      || currentTile == "HallwayS-W")
+        {
+            characterVisibility.MakeVisible(Sprite);
+        }
+        
+    }
 
     public void OnTriggerEnter2D(Collider2D room)
     {
@@ -103,8 +116,103 @@ public class TileTracker : MonoBehaviour
         {
             currentTile = "Entrance";
         }
+        //Hallways
+
+        else if (room.tag == "HallwayB-D-P")
+        {
+            currentTile = "HallwayB-D-P";
+            
+        }
+
+        else if (room.tag == "HallwayA-D")
+        {
+            currentTile = "HallwayA-D";
+        }
+
+        else if (room.tag == "HallwayD-S")
+        {
+            currentTile = "HallwayD-S";
+        }
+
+        else if (room.tag == "HallwayS-S")
+        {
+            currentTile = "HallwayS-S";
 
 
+        }
+        else if (room.tag == "HallwayA-S")
+        {
+            currentTile = "HallwayA-S";
+        }
+
+        else if (room.tag == "HallwayC-S")
+        {
+            currentTile = "HallwayC-S";
+        }
+
+        else if (room.tag == "HallwayC-E")
+        {
+            currentTile = "HallwayC-E";
+
+
+        }
+        else if (room.tag == "HallwayE-S-R")
+        {
+            currentTile = "HallwayE-S-R";
+        }
+
+        else if (room.tag == "HallwayR-U")
+        {
+            currentTile = "HallwayR-U";
+        }
+
+        else if (room.tag == "HallwayG-R")
+        {
+            currentTile = "HallwayG-R";
+
+
+        }
+        else if (room.tag == "HallwayB-R")
+        {
+            currentTile = "HallwayB-R";
+        }
+
+        else if (room.tag == "HallwayK-R")
+        {
+            currentTile = "HallwayK-R";
+        }
+
+        else if (room.tag == "HallwayE-K")
+        {
+            currentTile = "HallwayE-K";
+
+
+        }
+        else if (room.tag == "HallwayA-E")
+        {
+            currentTile = "HallwayA-E";
+        }
+
+        else if (room.tag == "HallwayE-P")
+        {
+            currentTile = "HallwayE-P";
+        }
+
+        else if (room.tag == "HallwayP-W")
+        {
+            currentTile = "HallwayP-W";
+
+
+        }
+        else if (room.tag == "HallwayW-P")
+        {
+            currentTile = "HallwayW-P";
+        }
+
+        else if (room.tag == "HallwayS-W")
+        {
+            currentTile = "HallwayS-W";
+        }
 
         tiles.Add(currentTile);
         Debug.Log(currentTile);

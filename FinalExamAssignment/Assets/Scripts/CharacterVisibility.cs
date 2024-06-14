@@ -18,9 +18,11 @@ public class CharacterVisibility : MonoBehaviour
     public SpriteRenderer FoxySprite;
     public SpriteRenderer FreddySprite;
 
+
     public void Update()
     {
         checkAnimatronicTile();
+        
     }
 
     public void MakeVisible(SpriteRenderer spriteRenderer)

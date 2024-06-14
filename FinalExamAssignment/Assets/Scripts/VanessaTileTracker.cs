@@ -153,28 +153,102 @@ public class VanessaTileTracker : MonoBehaviour
 
         //Hallways
 
-        else if (room.tag == "")
+        else if (room.tag == "HallwayB-D-P")
         {
-            VcurrentTile = "";
+            VcurrentTile = "HallwayB-D-P";
         }
 
-        else if (room.tag == "") 
+        else if (room.tag == "HallwayA-D") 
         {
-            VcurrentTile = "";
+            VcurrentTile = "HallwayA-D";
         }
 
-        else if (room.tag == "")
+        else if (room.tag == "HallwayD-S")
         {
-            VcurrentTile = "";
+            VcurrentTile = "HallwayD-S";
         }
 
-        else if (room.tag == "")
+        else if (room.tag == "HallwayS-S")
         {
-            VcurrentTile = "";
+            VcurrentTile = "HallwayS-S";
 
 
         }
-            Vtiles.Add(VcurrentTile);
+        else if (room.tag == "HallwayA-S")
+        {
+            VcurrentTile = "HallwayA-S";
+        }
+
+        else if (room.tag == "HallwayC-S")
+        {
+            VcurrentTile = "HallwayC-S";
+        }
+
+        else if (room.tag == "HallwayC-E")
+        {
+            VcurrentTile = "HallwayC-E";
+
+
+        }
+        else if (room.tag == "HallwayE-S-R")
+        {
+            VcurrentTile = "HallwayE-S-R";
+        }
+
+        else if (room.tag == "HallwayR-U")
+        {
+            VcurrentTile = "HallwayR-U";
+        }
+
+        else if (room.tag == "HallwayG-R")
+        {
+            VcurrentTile = "HallwayG-R";
+
+
+        }
+        else if (room.tag == "HallwayB-R")
+        {
+            VcurrentTile = "HallwayB-R";
+        }
+
+        else if (room.tag == "HallwayK-R")
+        {
+            VcurrentTile = "HallwayK-R";
+        }
+
+        else if (room.tag == "HallwayE-K")
+        {
+            VcurrentTile = "HallwayE-K";
+
+
+        }
+        else if (room.tag == "HallwayA-E")
+        {
+            VcurrentTile = "HallwayA-E";
+        }
+
+        else if (room.tag == "HallwayE-P")
+        {
+            VcurrentTile = "HallwayE-P";
+        }
+
+        else if (room.tag == "HallwayP-W")
+        {
+            VcurrentTile = "HallwayP-W";
+
+
+        }
+        else if (room.tag == "HallwayW-P")
+        {
+            VcurrentTile = "HallwayW-P";
+        }
+
+        else if (room.tag == "HallwayS-W")
+        {
+            VcurrentTile = "HallwayS-W";
+        }
+
+        Vtiles.Add(VcurrentTile);
             Debug.Log(VcurrentTile);
         
     }
