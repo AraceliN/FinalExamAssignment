@@ -12,10 +12,18 @@ public class PowerMeterManager : MonoBehaviour
     public GameObject WinCanvas;
     public GameObject GuardActionButton;
     public GameObject PowerMeterCanvas;
+    public GameObject EndVanessaTurnButton;
+
+    public GameObject CameraButtons;
+
     public PowerMeterScript PowerMeterScript;
     public GameObject SwitchScreen;
     public TaskHoursManager taskHoursManager;
     public RoundTracker roundTracker;
+    public void Start()
+    {
+        CameraButtons.SetActive(false);
+    }
 
     public void Update()
     {
@@ -59,8 +67,9 @@ public class PowerMeterManager : MonoBehaviour
         roundTracker.extraCam = false;
 
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
-        GuardActionButton.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);
+        CameraButtons.SetActive(true);
+        EndVanessaTurnButton.SetActive(false);
         return;
 
     }
