@@ -1652,7 +1652,7 @@ GameObject:
   - component: {fileID: 63231869}
   - component: {fileID: 63231871}
   - component: {fileID: 63231870}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Task2Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2481,6 +2481,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 0}
 --- !u!4 &160310394
 Transform:
   m_ObjectHideFlags: 0
@@ -3048,6 +3049,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!1 &245067643
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,8 +3107,10 @@ MonoBehaviour:
   EndAnimatronicTurnButton: {fileID: 1480509890}
   AnimatronicTurnButton: {fileID: 304395070}
   VanessaTurnButton: {fileID: 2126863875}
+  taskHoursManager: {fileID: 1764049170}
   roundNumberTxt: {fileID: 1611482076}
   isVanessaTurn: 0
+  extraCam: 0
 --- !u!114 &245067646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4962,6 +4966,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!1 &460136503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6441,9 +6446,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CLOSE ONE
+  m_text: 'CLOSE TWO
 
-    DOOR
+    DOORS
 
     -1'
   m_isRightToLeft: 0
@@ -9447,7 +9452,7 @@ GameObject:
   - component: {fileID: 574206651}
   - component: {fileID: 574206653}
   - component: {fileID: 574206652}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Task5Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10056,6 +10061,7 @@ RectTransform:
   m_Children:
   - {fileID: 2126863876}
   - {fileID: 304395071}
+  - {fileID: 1969198336}
   - {fileID: 851890857}
   - {fileID: 1480509891}
   m_Father: {fileID: 0}
@@ -10780,7 +10786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &834651502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10851,7 +10857,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834651500}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -10888,6 +10894,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!1 &851890856
 GameObject:
   m_ObjectHideFlags: 0
@@ -10920,7 +10927,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 776058501}
-  - {fileID: 1969198336}
   m_Father: {fileID: 700963338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -18299,8 +18305,8 @@ Transform:
   - {fileID: 1623753503}
   - {fileID: 41431866}
   - {fileID: 160310394}
-  - {fileID: 834651505}
   - {fileID: 1817545791}
+  - {fileID: 834651505}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178980401
@@ -19481,6 +19487,7 @@ MonoBehaviour:
   AnimatronicButtons: {fileID: 1817545790}
   GuardActionsButtonsCanvas: {fileID: 834651500}
   GuardActionButton: {fileID: 538849307}
+  TasksHeadings: {fileID: 1969198335}
   GameView: {fileID: 1170099106}
   Foxy: {fileID: 1180456880}
   Chica: {fileID: 1466853902}
@@ -19670,6 +19677,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!4 &1342969993
 Transform:
   m_ObjectHideFlags: 0
@@ -19841,6 +19849,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!1 &1363137772
 GameObject:
   m_ObjectHideFlags: 0
@@ -20296,7 +20305,7 @@ GameObject:
   - component: {fileID: 1392127458}
   - component: {fileID: 1392127460}
   - component: {fileID: 1392127459}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Task4Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23456,7 +23465,7 @@ GameObject:
   - component: {fileID: 1764049171}
   - component: {fileID: 1764049170}
   m_Layer: 0
-  m_Name: TaskManager
+  m_Name: TaskHoursManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23486,6 +23495,7 @@ MonoBehaviour:
   Task4Label: {fileID: 1392127459}
   Task5Label: {fileID: 574206652}
   totalHours: 0
+  freecam: 0
   gameManager: {fileID: 1282657117}
   taskOnedone: 0
   taskTwodone: 0
@@ -23544,6 +23554,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 293765046}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!4 &1792222885
 Transform:
   m_ObjectHideFlags: 0
@@ -23572,7 +23583,7 @@ GameObject:
   - component: {fileID: 1812404701}
   - component: {fileID: 1812404703}
   - component: {fileID: 1812404702}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Task1Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24473,7 +24484,7 @@ GameObject:
   - component: {fileID: 1885597418}
   - component: {fileID: 1885597420}
   - component: {fileID: 1885597419}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Task3Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24997,7 +25008,7 @@ GameObject:
   - component: {fileID: 1969198336}
   - component: {fileID: 1969198338}
   - component: {fileID: 1969198337}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: TaskHeadingText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25012,7 +25023,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969198335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25021,11 +25032,11 @@ RectTransform:
   - {fileID: 1885597418}
   - {fileID: 1392127458}
   - {fileID: 574206651}
-  m_Father: {fileID: 851890857}
+  m_Father: {fileID: 700963338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1547, y: 911}
+  m_AnchoredPosition: {x: -748.00006, y: 476.99994}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969198337
@@ -25928,6 +25939,7 @@ MonoBehaviour:
   PowerMeterScript: {fileID: 1987585584}
   SwitchScreen: {fileID: 700963334}
   taskHoursManager: {fileID: 1764049170}
+  roundTracker: {fileID: 245067645}
 --- !u!1 &2075179385
 GameObject:
   m_ObjectHideFlags: 0

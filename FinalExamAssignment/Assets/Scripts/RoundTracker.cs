@@ -11,15 +11,19 @@ public class RoundTracker : MonoBehaviour
     public GameObject AnimatronicTurnButton;
     public GameObject VanessaTurnButton;
 
+    public TaskHoursManager taskHoursManager;
+
     public TextMeshProUGUI roundNumberTxt;
     public bool isVanessaTurn;
+    public bool extraCam;
 
     // Start is called before the first frame update
     void Start()
     {
         roundNumber = 1;
         isVanessaTurn = true;
-    }
+         extraCam = false;
+}
 
     public void VanessaTurn()
     {
@@ -35,6 +39,10 @@ public class RoundTracker : MonoBehaviour
 
     public void NextRound()
     {
+        if (taskHoursManager.freecam == true)
+        {
+            extraCam = true;
+        }
         roundNumber += 1;
         roundNumberTxt.text = roundNumber.ToString("");
 

@@ -15,6 +15,7 @@ public class PowerMeterManager : MonoBehaviour
     public PowerMeterScript PowerMeterScript;
     public GameObject SwitchScreen;
     public TaskHoursManager taskHoursManager;
+    public RoundTracker roundTracker;
 
     public void Update()
     {
@@ -47,7 +48,16 @@ public class PowerMeterManager : MonoBehaviour
     //when the button is pressed, it will call the text object and minus the specified number accordingly
     public void CameraButtonPressed()
     {
+        if (roundTracker.extraCam)
+        {
+            PowerMeterScript.PowerMeter -= 0 ;
+        }
+        else
+        {
         PowerMeterScript.PowerMeter -= 1;
+        }
+        roundTracker.extraCam = false;
+
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
         GuardActionButton.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);

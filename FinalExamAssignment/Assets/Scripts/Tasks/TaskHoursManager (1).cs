@@ -32,7 +32,7 @@ public class TaskHoursManager : MonoBehaviour
 
     public int totalHours;
 
-    bool freecam = false;
+    public bool freecam = false;
 
     int emergencydoor = 0;
 
@@ -61,7 +61,7 @@ public class TaskHoursManager : MonoBehaviour
 
         if (totalHours >= 2)
         {
-            bool freecam = true;
+            freecam = true;
 
             if (totalHours == 4 && (emergencydoor == 0 || emergencydoor == 1))
             {

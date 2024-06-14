@@ -14,6 +14,7 @@ public class SwitchScreenManager : MonoBehaviour
     public GameObject AnimatronicButtons;
     public GameObject GuardActionsButtonsCanvas;
     public GameObject GuardActionButton;
+    public GameObject TasksHeadings;
 
     public GameObject GameView;
 
@@ -41,6 +42,8 @@ public class SwitchScreenManager : MonoBehaviour
 
         VanessaButtons.SetActive(false);
         AnimatronicButtons.SetActive(false);
+
+        TasksHeadings.SetActive(false);
     }
 
     public void StartVanessaTurn()
@@ -54,6 +57,8 @@ public class SwitchScreenManager : MonoBehaviour
         GuardActionButton.SetActive(true);
 
         EndVanessaTurnButton.SetActive(true);
+
+        TasksHeadings.SetActive(true);
     }
 
     public void EndVanessaTurn()
@@ -70,6 +75,7 @@ public class SwitchScreenManager : MonoBehaviour
         GameView.SetActive(false);
 
         StartAnimatronicTurnButton.SetActive(true);
+        TasksHeadings.SetActive(false);
     }
 
     public void StartAnimatronicTurn()
