@@ -2,28 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FreddyTeleport : MonoBehaviour
+public class FoxyDash : MonoBehaviour
 {
     public VanessaTileTracker VanessaTileTracker;
-    public TileTracker Freddytiletracker;
+    public TileTracker Foxytiletracker;
 
     public SpriteRenderer VanessaSprite;
-    public SpriteRenderer FreddySprite;
+    public SpriteRenderer FoxySprite;
 
     public VanessaVisibility VanessaVisibility;
 
-    public GameObject TeleportButtons;
     public GameObject gameObject;
-    public GameObject FreddyAbilityButton;
+    public GameObject FoxyAbilityButton;
     public GameObject EndAnimatronicTurnButton;
 
-    public void Teleportation()
+    public void Dash()
     {
 
-        
-
-        FreddyAbilityButton.SetActive(false);
-        TeleportButtons.SetActive(false);
+        FoxyAbilityButton.SetActive(false);
         EndAnimatronicTurnButton.SetActive(true);
     }
 

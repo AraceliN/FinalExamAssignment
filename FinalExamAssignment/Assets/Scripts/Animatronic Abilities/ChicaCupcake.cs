@@ -5,22 +5,16 @@ using UnityEngine;
 public class ChicaCupcake : MonoBehaviour
 {
     public VanessaTileTracker VanessaTileTracker;
-    public TileTracker Chicatiletracker;
-    public TileTracker Foxytiletracker;
-    public TileTracker Freddytiletracker;
 
     public SpriteRenderer VanessaSprite;
-    public SpriteRenderer ChicaSprite;
-    public SpriteRenderer FoxySprite;
-    public SpriteRenderer FreddySprite;
-
+   
     public VanessaVisibility VanessaVisibility;
 
-    public GameObject CameraButtons;
+    public GameObject CupcakeButtons;
     public GameObject gameObject;
-    public GameObject ChicaAbilityButton;
     public GameObject EndAnimatronicTurnButton;
 
+    
     public void PlaceCupcake()
     {
 
@@ -29,10 +23,9 @@ public class ChicaCupcake : MonoBehaviour
             VanessaVisibility.MakeVisible(VanessaSprite);
         }
 
-        ChicaAbilityButton.SetActive(false);
-        CameraButtons.SetActive(false);
+       
+        CupcakeButtons.SetActive(false);
         EndAnimatronicTurnButton.SetActive(true);
     }
-
 
 }
