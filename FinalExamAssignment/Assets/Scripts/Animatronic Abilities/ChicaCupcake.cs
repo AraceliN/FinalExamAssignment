@@ -13,8 +13,12 @@ public class ChicaCupcake : MonoBehaviour
     public GameObject CupcakeButtons;
     public GameObject gameObject;
     public GameObject EndAnimatronicTurnButton;
+    public GameObject AnimatronicAbilityCanvas;
 
-    
+    public GameObject Chica;
+    public GameObject Foxy;
+    public GameObject Freddy;
+
     public void PlaceCupcake()
     {
 
@@ -26,6 +30,11 @@ public class ChicaCupcake : MonoBehaviour
        
         CupcakeButtons.SetActive(false);
         EndAnimatronicTurnButton.SetActive(true);
+        AnimatronicAbilityCanvas.SetActive(true);
+
+        Foxy.SetActive(true);
+        Freddy.SetActive(true);
+        Chica.SetActive(true);
     }
 
 }

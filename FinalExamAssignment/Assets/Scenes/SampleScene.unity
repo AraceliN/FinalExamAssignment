@@ -2947,6 +2947,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 183010661}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &188279493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3102,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 188279493}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &194968802
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,6 +3926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 275483962}
+  - component: {fileID: 275483963}
   m_Layer: 0
   m_Name: Animatronics
   m_TagString: Untagged
@@ -3943,6 +3952,28 @@ Transform:
   - {fileID: 1466853906}
   m_Father: {fileID: 1170099107}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &275483963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275483961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0a334654e3c664aba894a7410951e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChicaAbilityButton: {fileID: 1837170873}
+  FoxyAbilityButton: {fileID: 1022128256}
+  FreddyAbilityButton: {fileID: 2086623136}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  CupcakeButtons: {fileID: 375151313}
+  EndAnimatronicTurn: {fileID: 1480509890}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 275483961}
+  RoundTracker: {fileID: 245067645}
 --- !u!1 &286217053
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,6 +4256,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 288191414}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &293765045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,6 +5346,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 338605669}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &375151313
 GameObject:
   m_ObjectHideFlags: 0
@@ -5510,6 +5549,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 389863585}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &398903469
 GameObject:
   m_ObjectHideFlags: 0
@@ -7447,6 +7490,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 519056601}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10876,6 +10923,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 569733793}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &574206650
 GameObject:
   m_ObjectHideFlags: 0
@@ -13339,6 +13390,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 845538716}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &851890856
 GameObject:
   m_ObjectHideFlags: 0
@@ -21190,6 +21245,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1060806379}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1100223711
 GameObject:
   m_ObjectHideFlags: 0
@@ -21609,6 +21668,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1123938939}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1134932873
 GameObject:
   m_ObjectHideFlags: 0
@@ -22615,6 +22678,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1217913266}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1231819107
 GameObject:
   m_ObjectHideFlags: 0
@@ -23966,6 +24033,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1358778831}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1363137772
 GameObject:
   m_ObjectHideFlags: 0
@@ -24854,6 +24925,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1394208811}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1403268068
 GameObject:
   m_ObjectHideFlags: 0
@@ -28286,6 +28361,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1640923761}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1671748700
 GameObject:
   m_ObjectHideFlags: 0
@@ -29411,8 +29490,12 @@ MonoBehaviour:
   ChicaAbilityButton: {fileID: 1837170873}
   FoxyAbilityButton: {fileID: 1022128256}
   FreddyAbilityButton: {fileID: 2086623136}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
   CupcakeButtons: {fileID: 375151313}
   EndAnimatronicTurn: {fileID: 1480509890}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
   RoundTracker: {fileID: 245067645}
 --- !u!1 &1833216183
 GameObject:
@@ -29828,6 +29911,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1842858648}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1843242041
 GameObject:
   m_ObjectHideFlags: 0
@@ -30646,6 +30733,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1918805279}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &1935947153
 GameObject:
   m_ObjectHideFlags: 0
@@ -31611,6 +31702,10 @@ MonoBehaviour:
   CupcakeButtons: {fileID: 375151313}
   gameObject: {fileID: 1997061540}
   EndAnimatronicTurnButton: {fileID: 1480509890}
+  AnimatronicAbilityCanvas: {fileID: 1817545790}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  Freddy: {fileID: 1269996702}
 --- !u!1 &2005694035
 GameObject:
   m_ObjectHideFlags: 0

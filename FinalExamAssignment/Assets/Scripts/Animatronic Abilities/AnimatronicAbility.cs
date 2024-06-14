@@ -8,8 +8,13 @@ public class AnimatronicAbility : MonoBehaviour
     public GameObject ChicaAbilityButton;
     public GameObject FoxyAbilityButton;
     public GameObject FreddyAbilityButton;
+    public GameObject AnimatronicAbilityCanvas;
     public GameObject CupcakeButtons;
     public GameObject EndAnimatronicTurn;
+
+    public GameObject Chica;
+    public GameObject Foxy;
+    public GameObject Freddy;
 
     public RoundTracker RoundTracker;
 
@@ -29,6 +34,11 @@ public class AnimatronicAbility : MonoBehaviour
             ChicaAbilityButton.SetActive(false);
             CupcakeButtons.SetActive(true);
             EndAnimatronicTurn.SetActive(false);
+            AnimatronicAbilityCanvas.SetActive(false);
+
+            Foxy.SetActive(false);
+            Freddy.SetActive(false);
+            Chica.SetActive(false);
         }
         else
         {
