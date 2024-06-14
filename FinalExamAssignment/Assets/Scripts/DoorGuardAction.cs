@@ -131,7 +131,7 @@ public class DoorGuardAction : MonoBehaviour
                 }
                 break;
 
-                case 2:
+            case 2:
                 if (selected2 == false)
                 {
                     numberofSelections++;
@@ -142,7 +142,7 @@ public class DoorGuardAction : MonoBehaviour
                 }
                 break;
 
-                case 3:
+            case 3:
                 if (selected2 == false)
                 {
                     numberofSelections++;
@@ -153,6 +153,391 @@ public class DoorGuardAction : MonoBehaviour
                 }
                 break;
 
+                case 4:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    EastHall_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 5:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    EastHall_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 6:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    PrizeCorner_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 7:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    PrizeCorner_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 8:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    WestHall_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 9:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    WestHall_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 10:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    WestHall_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 11:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    SupplyCloset_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 12:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    PirateCove_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 13:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    PirateCove_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 14:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Backroom_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 15:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    DiningArea_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 16:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    DiningArea_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break; 
+
+                case 17:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    DiningArea_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 18:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    ControlRoom_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 19:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    ControlRoom_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 20:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Stage_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 21:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Stage_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 22:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Security_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 23:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Security_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 24:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Security_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 25:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Security_right.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 26:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Arcade_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 27:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Arcade_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 28:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Arcade_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 29:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Entrance_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 30:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Entrance_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 31:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Restrooms_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 32:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Restrooms_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+                case 33:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Restrooms_rightTop.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+            case 34:
+                 if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Restrooms_rightBottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+            case 35:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Restrooms_top.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+            case 36:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Unisex_bottom.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+            case 37:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Girls_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
+
+
+            case 38:
+                if (selected2 == false)
+                {
+                    numberofSelections++;
+                    Boys_left.SetActive(true);
+                    Update();
+                    Reset();
+
+                }
+                break;
         }
     }
 

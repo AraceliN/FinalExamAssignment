@@ -2274,7 +2274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &104685756
 Transform:
   m_ObjectHideFlags: 0
@@ -2321,8 +2321,8 @@ Transform:
   - {fileID: 1673985342}
   - {fileID: 291578619}
   - {fileID: 1216921248}
-  - {fileID: 1059927570}
   - {fileID: 898488356}
+  - {fileID: 1059927570}
   - {fileID: 486757875}
   - {fileID: 608638454}
   - {fileID: 1069608982}
@@ -5862,12 +5862,15 @@ MonoBehaviour:
   Entrance_bottom: {fileID: 1193225660}
   Entrance_left: {fileID: 18028408}
   Restrooms_left: {fileID: 66595762}
-  Restrooms_right: {fileID: 1216921247}
+  Restrooms_rightTop: {fileID: 1216921247}
+  Restrooms_rightBottom: {fileID: 885936262}
   Restrooms_top: {fileID: 291578618}
   Restrooms_bottom: {fileID: 1751664518}
   Unisex_bottom: {fileID: 820719420}
   Girls_left: {fileID: 1614899020}
   Boys_left: {fileID: 740521041}
+  Dropdown: {fileID: 439320962}
+  GuardActionsButton: {fileID: 538849307}
 --- !u!4 &364022843
 Transform:
   m_ObjectHideFlags: 0
@@ -6611,7 +6614,9 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: 'Restrooms: Left'
       m_Image: {fileID: 0}
-    - m_Text: 'Restrooms: Right'
+    - m_Text: 'Restrooms: Right Top'
+      m_Image: {fileID: 0}
+    - m_Text: 'Restrooms: Right Bottom'
       m_Image: {fileID: 0}
     - m_Text: 'Restrooms: Top'
       m_Image: {fileID: 0}
@@ -15081,6 +15086,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2575272186693162493, guid: e4de1c314c917ad4682b1bc94c82abbe, type: 3}
   m_PrefabInstance: {fileID: 596398642}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &885936262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8711059746553386285, guid: e4de1c314c917ad4682b1bc94c82abbe, type: 3}
+  m_PrefabInstance: {fileID: 1290838917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &889662474
 GameObject:
   m_ObjectHideFlags: 0
@@ -22043,7 +22053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711059746553386285, guid: e4de1c314c917ad4682b1bc94c82abbe, type: 3}
       propertyPath: m_Name
-      value: Restrooms_Right
+      value: Restrooms_RightTop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25098,7 +25108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8711059746553386285, guid: e4de1c314c917ad4682b1bc94c82abbe, type: 3}
       propertyPath: m_Name
-      value: Restrooms_Right
+      value: Restrooms_RightBottom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
