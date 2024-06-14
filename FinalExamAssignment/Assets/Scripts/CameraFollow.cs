@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; 
+    public Transform target; //just testing it out with Vanessa only for now
     public float smoothSpeed = 0.125f;
     public Vector3 offset; 
     public float minZoom = 5f; 
