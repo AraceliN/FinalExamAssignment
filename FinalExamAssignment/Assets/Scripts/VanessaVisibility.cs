@@ -18,7 +18,12 @@ public class VanessaVisibility : MonoBehaviour
     public SpriteRenderer FoxySprite;
     public SpriteRenderer FreddySprite;
     public SpriteRenderer SpriteRenderer;
+    public bool CanUseFlashLight;
 
+    public void Start()
+    {
+        CanUseFlashLight = false;
+    }
 
     public void Update()
     {
@@ -57,18 +62,21 @@ public class VanessaVisibility : MonoBehaviour
         {
             MakeVisible(FreddySprite);
             MakeVisible(VanessaSprite);
+            CanUseFlashLight = true;
         }
 
         if (VanessaTileTracker.VcurrentTile == Foxytiletracker.currentTile)
         {
             MakeVisible(FoxySprite);
             MakeVisible(VanessaSprite);
+            CanUseFlashLight = true;
         }
 
         if (VanessaTileTracker.VcurrentTile == Chicatiletracker.currentTile)
         {
             MakeVisible(ChicaSprite);
             MakeVisible(VanessaSprite);
+            CanUseFlashLight = true;
         }
 
     }

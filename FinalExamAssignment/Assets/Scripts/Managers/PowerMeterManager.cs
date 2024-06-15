@@ -21,6 +21,8 @@ public class PowerMeterManager : MonoBehaviour
     public GameObject SwitchScreen;
     public TaskHoursManager taskHoursManager;
     public RoundTracker roundTracker;
+    public FlashlightAbility FlashLightAbility;
+
     public void Start()
     {
         CameraButtons.SetActive(false);
@@ -89,8 +91,10 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 3;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
-        GuardActionButton.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);
+        EndVanessaTurnButton.SetActive(false);
+        Vanessa.SetActive(false);
+        FlashLightAbility.ActivateFlashLightButtons();
         return;
     }
 
