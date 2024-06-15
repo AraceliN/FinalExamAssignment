@@ -48,39 +48,39 @@ public class VanessaVisibility : MonoBehaviour
 
     public void CheckHallways()
     {
-        if (VanessaTileTracker.VcurrentTile == "HallwayB-D-P" || VanessaTileTracker.VcurrentTile == "HallwayA-D" || VanessaTileTracker.VcurrentTile == "HallwayD-S" || VanessaTileTracker.VcurrentTile == "HallwayS-S" || 
-            VanessaTileTracker.VcurrentTile == "HallwayA-S" ||  VanessaTileTracker.VcurrentTile == "HallwayC-S" || VanessaTileTracker.VcurrentTile == "HallwayC-E" || VanessaTileTracker.VcurrentTile == "HallwayE-S-R" ||
-            VanessaTileTracker.VcurrentTile == "HallwayR-U" || VanessaTileTracker.VcurrentTile == "HallwayG-R" ||  VanessaTileTracker.VcurrentTile == "HallwayB-R" || VanessaTileTracker.VcurrentTile == "HallwayK-R" || 
-            VanessaTileTracker.VcurrentTile == "HallwayE-K" || VanessaTileTracker.VcurrentTile == "HallwayA-E" || VanessaTileTracker.VcurrentTile == "HallwayE-P" ||
-            VanessaTileTracker.VcurrentTile == "HallwayW-P" || VanessaTileTracker.VcurrentTile == "HallwayS-W")
+        if (VanessaTileTracker.currentTile == "HallwayB-D-P" || VanessaTileTracker.currentTile == "HallwayA-D" || VanessaTileTracker.currentTile == "HallwayD-S" || VanessaTileTracker.currentTile == "HallwayS-S" || 
+            VanessaTileTracker.currentTile == "HallwayA-S" ||  VanessaTileTracker.currentTile == "HallwayC-S" || VanessaTileTracker.currentTile == "HallwayC-E" || VanessaTileTracker.currentTile == "HallwayE-S-R" ||
+            VanessaTileTracker.currentTile == "HallwayR-U" || VanessaTileTracker.currentTile == "HallwayG-R" ||  VanessaTileTracker.currentTile == "HallwayB-R" || VanessaTileTracker.currentTile == "HallwayK-R" || 
+            VanessaTileTracker.currentTile == "HallwayE-K" || VanessaTileTracker.currentTile == "HallwayA-E" || VanessaTileTracker.currentTile == "HallwayE-P" ||
+            VanessaTileTracker.currentTile == "HallwayW-P" || VanessaTileTracker.currentTile == "HallwayS-W")
         {
             MakeVisible(SpriteRenderer);
         }
     }
     public void checkAnimatronicTile()
     {
-        if (VanessaTileTracker.VcurrentTile == Freddytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Freddytiletracker.currentTile)
         {
             MakeVisible(FreddySprite);
             MakeVisible(VanessaSprite);
             CanUseFlashLight = true;
         }
 
-        if (VanessaTileTracker.VcurrentTile == Foxytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Foxytiletracker.currentTile)
         {
             MakeVisible(FoxySprite);
             MakeVisible(VanessaSprite);
             CanUseFlashLight = true;
         }
 
-        if (VanessaTileTracker.VcurrentTile == Chicatiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Chicatiletracker.currentTile)
         {
             MakeVisible(ChicaSprite);
             MakeVisible(VanessaSprite);
             CanUseFlashLight = true;
         }
 
-        if (VanessaTileTracker.VcurrentTile != Chicatiletracker.currentTile && VanessaTileTracker.VcurrentTile != Foxytiletracker.currentTile && VanessaTileTracker.VcurrentTile != Freddytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile != Chicatiletracker.currentTile && VanessaTileTracker.currentTile != Foxytiletracker.currentTile && VanessaTileTracker.currentTile != Freddytiletracker.currentTile)
         {
             CanUseFlashLight = false;
 

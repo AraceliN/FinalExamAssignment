@@ -126,19 +126,19 @@ public class FlashlightAbility : MonoBehaviour
 
     public void ActivateFlashLightButtons()
     {
-        if (VanessaTileTracker.VcurrentTile == "Controlroom")
+        if (VanessaTileTracker.currentTile == "Controlroom")
         {
             Stage.SetActive(true);
             Entrance.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Stage")
+        else if (VanessaTileTracker.currentTile == "Stage")
         {
             SecurityOffice.SetActive(true);
             Controlroom.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "SecurityOffice")
+        else if (VanessaTileTracker.currentTile == "SecurityOffice")
         {
             Stage.SetActive(true);
             DiningArea.SetActive(true);
@@ -147,7 +147,7 @@ public class FlashlightAbility : MonoBehaviour
             Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "DiningArea")
+        else if (VanessaTileTracker.currentTile == "DiningArea")
         {
             Arcade.SetActive(true);
             Backroom.SetActive(true);
@@ -155,28 +155,28 @@ public class FlashlightAbility : MonoBehaviour
             SecurityOffice.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Backroom")
+        else if (VanessaTileTracker.currentTile == "Backroom")
         {
             DiningArea.SetActive (true);
             PirateCove.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Unisex")
+        else if (VanessaTileTracker.currentTile == "Unisex")
         {
             Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Boys")
+        else if (VanessaTileTracker.currentTile == "Boys")
         {
            Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Girls")
+        else if (VanessaTileTracker.currentTile == "Girls")
         {
            Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Restrooms")
+        else if (VanessaTileTracker.currentTile == "Restrooms")
         {
             Girls.SetActive(true);
             Boys.SetActive(true);
@@ -186,7 +186,7 @@ public class FlashlightAbility : MonoBehaviour
             SecurityOffice.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "PirateCove")
+        else if (VanessaTileTracker.currentTile == "PirateCove")
         {
             DiningArea.SetActive(true);
             Backroom.SetActive(true);
@@ -194,45 +194,45 @@ public class FlashlightAbility : MonoBehaviour
 
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "SupplyCloset")
+        else if (VanessaTileTracker.currentTile == "SupplyCloset")
         {
            WestHall.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Arcade")
+        else if (VanessaTileTracker.currentTile == "Arcade")
         {
             EastHall.SetActive(true);
             DiningArea.SetActive(true);
             SecurityOffice.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "WestHall")
+        else if (VanessaTileTracker.currentTile == "WestHall")
         {
             PirateCove.SetActive(true);
             SupplyCloset.SetActive(true);
             PrizeCorner.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "PrizeCorner")
+        else if (VanessaTileTracker.currentTile == "PrizeCorner")
         {
             WestHall.SetActive(true);
             EastHall.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "EastHall")
+        else if (VanessaTileTracker.currentTile == "EastHall")
         {
             PrizeCorner.SetActive(true);
             Arcade.SetActive(true);
             Kitchen.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Kitchen")
+        else if (VanessaTileTracker.currentTile == "Kitchen")
         {
             Restrooms.SetActive(true);
             EastHall.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "Entrance")
+        else if (VanessaTileTracker.currentTile == "Entrance")
         {
             Controlroom.SetActive(true);
             SecurityOffice.SetActive(true);
@@ -241,111 +241,111 @@ public class FlashlightAbility : MonoBehaviour
 
         //Hallways
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayB-D-P")
+        else if (VanessaTileTracker.currentTile == "HallwayB-D-P")
         {
             Backroom.SetActive(true);
             DiningArea.SetActive(true);
             PirateCove.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayA-D")
+        else if (VanessaTileTracker.currentTile == "HallwayA-D")
         {
             Arcade.SetActive(true);
             DiningArea.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayD-S")
+        else if (VanessaTileTracker.currentTile == "HallwayD-S")
         {
             DiningArea.SetActive(true);
             SecurityOffice.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayS-S")
+        else if (VanessaTileTracker.currentTile == "HallwayS-S")
         {
             SecurityOffice.SetActive(true);
             Stage.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayA-S")
+        else if (VanessaTileTracker.currentTile == "HallwayA-S")
         {
             Arcade.SetActive(true);
             SecurityOffice.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayC-S")
+        else if (VanessaTileTracker.currentTile == "HallwayC-S")
         {
             Controlroom.SetActive(true);
             Stage.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayC-E")
+        else if (VanessaTileTracker.currentTile == "HallwayC-E")
         {           
             Controlroom.SetActive(true);
             Entrance.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayE-S-R")
+        else if (VanessaTileTracker.currentTile == "HallwayE-S-R")
         {
             Entrance.SetActive(true);
             SecurityOffice.SetActive(true);
             Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayR-U")
+        else if (VanessaTileTracker.currentTile == "HallwayR-U")
         {
             Restrooms.SetActive(true);
             Unisex.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayG-R")
+        else if (VanessaTileTracker.currentTile == "HallwayG-R")
         {
             Girls.SetActive(true);
             Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayB-R")
+        else if (VanessaTileTracker.currentTile == "HallwayB-R")
         {
             Boys.SetActive(true);
             Restrooms.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayK-R")
+        else if (VanessaTileTracker.currentTile == "HallwayK-R")
         {
             Restrooms.SetActive(true);
             Kitchen.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayE-K")
+        else if (VanessaTileTracker.currentTile == "HallwayE-K")
         {
             Kitchen.SetActive(true);
             EastHall.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayA-E")
+        else if (VanessaTileTracker.currentTile == "HallwayA-E")
         {
             EastHall.SetActive(true);
             Arcade.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayE-P")
+        else if (VanessaTileTracker.currentTile == "HallwayE-P")
         {
             EastHall.SetActive(true);
             PrizeCorner.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayP-W")
+        else if (VanessaTileTracker.currentTile == "HallwayP-W")
         {
             WestHall.SetActive(true);
             PrizeCorner.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayW-P")
+        else if (VanessaTileTracker.currentTile == "HallwayW-P")
         {
             WestHall.SetActive(true);
             PirateCove.SetActive(true);
         }
 
-        else if (VanessaTileTracker.VcurrentTile == "HallwayS-W")
+        else if (VanessaTileTracker.currentTile == "HallwayS-W")
         {
             SupplyCloset.SetActive(true);
             WestHall.SetActive(true);
@@ -373,17 +373,17 @@ public class FlashlightAbility : MonoBehaviour
         Kitchen.SetActive(false);
         Entrance.SetActive(false);
 
-        if (VanessaTileTracker.VcurrentTile == Freddytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Freddytiletracker.currentTile)
         {
             Freddy.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }
 
-        if (VanessaTileTracker.VcurrentTile == Foxytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Foxytiletracker.currentTile)
         {
             Foxy.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }
 
-        if (VanessaTileTracker.VcurrentTile == Chicatiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Chicatiletracker.currentTile)
         {
             Chica.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }

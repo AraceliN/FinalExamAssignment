@@ -22,7 +22,7 @@ public class ChicaCupcake : MonoBehaviour
     public void PlaceCupcake()
     {
 
-        if (gameObject.name == VanessaTileTracker.VcurrentTile)
+        if (gameObject.name == VanessaTileTracker.currentTile)
         {
             VanessaVisibility.MakeVisible(VanessaSprite);
         }

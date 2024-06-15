@@ -40,7 +40,7 @@ public class CameraAbility : MonoBehaviour
             VanessaVisibility.MakeVisible(ChicaSprite);
         }
 
-        if (gameObject.name == VanessaTileTracker.VcurrentTile)
+        if (gameObject.name == VanessaTileTracker.currentTile)
         {
             VanessaVisibility.MakeVisible(VanessaSprite);
         }

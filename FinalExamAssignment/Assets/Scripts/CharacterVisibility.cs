@@ -54,19 +54,19 @@ public class CharacterVisibility : MonoBehaviour
     }
     public void checkAnimatronicTile()
     {
-        if (VanessaTileTracker.VcurrentTile == Freddytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Freddytiletracker.currentTile)
         {
             MakeVisible(FreddySprite);
             MakeVisible(VanessaSprite);
         }
 
-        if (VanessaTileTracker.VcurrentTile == Foxytiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Foxytiletracker.currentTile)
         {
             MakeVisible(FoxySprite);
             MakeVisible(VanessaSprite);
         }
 
-        if (VanessaTileTracker.VcurrentTile == Chicatiletracker.currentTile)
+        if (VanessaTileTracker.currentTile == Chicatiletracker.currentTile)
         {
             MakeVisible(ChicaSprite);
             MakeVisible(VanessaSprite);
