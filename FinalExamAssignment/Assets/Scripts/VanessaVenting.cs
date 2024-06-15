@@ -7,6 +7,7 @@ public class VanessaVenting : MonoBehaviour
 {
 
     public VanessaTileTracker VanessaTileTracker;
+    public bool isVenting;
 
     string VVent;
     List<string> Vvents = new List<string>();
@@ -26,6 +27,7 @@ public class VanessaVenting : MonoBehaviour
     private void Start()
     {
         VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
+        isVenting = false;
     }
 
     public void OnTriggerEnter2D(Collider2D room)
@@ -88,6 +90,7 @@ public class VanessaVenting : MonoBehaviour
 
     IEnumerator OneSecondTimerVMovement()
     {
+        isVenting = true;
         VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
         countdownTime = 1;
         while (countdownTime > 0)
@@ -98,7 +101,7 @@ public class VanessaVenting : MonoBehaviour
             countdownTime--;
         }
 
-
+        isVenting = false;
         VanessaSprite.GetComponent<VaPlayerMovement>().enabled = true;
 
     }

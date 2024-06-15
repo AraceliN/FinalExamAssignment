@@ -13,6 +13,7 @@ public class VanessaVisibility : MonoBehaviour
     public TileTracker Freddytiletracker;
 
 
+
     public SpriteRenderer VanessaSprite;
     public SpriteRenderer ChicaSprite;
     public SpriteRenderer FoxySprite;
@@ -77,6 +78,12 @@ public class VanessaVisibility : MonoBehaviour
             MakeVisible(ChicaSprite);
             MakeVisible(VanessaSprite);
             CanUseFlashLight = true;
+        }
+
+        if (VanessaTileTracker.VcurrentTile != Chicatiletracker.currentTile && VanessaTileTracker.VcurrentTile != Foxytiletracker.currentTile && VanessaTileTracker.VcurrentTile != Freddytiletracker.currentTile)
+        {
+            CanUseFlashLight = false;
+
         }
 
     }

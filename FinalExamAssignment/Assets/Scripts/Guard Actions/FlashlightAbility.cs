@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using static TileTypes;
 
 public class FlashlightAbility : MonoBehaviour
@@ -10,9 +11,10 @@ public class FlashlightAbility : MonoBehaviour
     public TileTracker Foxytiletracker;
     public TileTracker Freddytiletracker;
 
-    
 
+    public VaPlayerMovement VaPlayerMovement;
     public VanessaVisibility VanessaVisibility;
+    public VanessaVenting VanessaVenting;
     public RoundTracker RoundTracker;
 
     public GameObject FlashlightButton;
@@ -45,6 +47,7 @@ public class FlashlightAbility : MonoBehaviour
     public GameObject EastHall;
     public GameObject Kitchen;
     public GameObject Entrance;
+
 
     public void Start()
     {
@@ -88,16 +91,36 @@ public class FlashlightAbility : MonoBehaviour
                 Sound.SetActive(false);
                 Doors.SetActive(false);
                 GuardActionCanvas.SetActive(true);
-            }
+
+
+                VaPlayerMovement.enabled = false;
+}
             else
             {
                 FlashlightButton.SetActive(false);
+
+                Cams.SetActive(true);
+                Sound.SetActive(true);
+                Doors.SetActive(true);
+                if (VanessaVenting.isVenting == false)
+                {
+                    VaPlayerMovement.enabled = true;
+                }
+                
             }
 
         }
         else 
         {
-           FlashlightButton.SetActive (false);
+            FlashlightButton.SetActive (false);
+
+            Cams.SetActive(true);
+            Sound.SetActive(true);
+            Doors.SetActive(true);
+            if (VanessaVenting.isVenting == false)
+            {
+                VaPlayerMovement.enabled = true;
+            }
         }
     }
 
@@ -330,6 +353,8 @@ public class FlashlightAbility : MonoBehaviour
     }
     public void UseFlashLight()
     {
+        string ClickedRoomName = EventSystem.current.currentSelectedGameObject.name;
+        ClickedRoomName = ClickedRoomName + "Blue";
         Controlroom.SetActive(false);
         Stage.SetActive(false);
         SecurityOffice.SetActive(false);
@@ -350,17 +375,17 @@ public class FlashlightAbility : MonoBehaviour
 
         if (VanessaTileTracker.VcurrentTile == Freddytiletracker.currentTile)
         {
-
+            Freddy.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }
 
         if (VanessaTileTracker.VcurrentTile == Foxytiletracker.currentTile)
         {
-
+            Foxy.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }
 
         if (VanessaTileTracker.VcurrentTile == Chicatiletracker.currentTile)
         {
-
+            Chica.transform.position = GameObject.Find(ClickedRoomName).transform.position;
         }
 
         VanessaVisibility.CanUseFlashLight = false;

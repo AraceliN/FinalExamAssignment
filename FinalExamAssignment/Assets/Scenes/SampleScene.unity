@@ -7939,6 +7939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VanessaTileTracker: {fileID: 490292319}
+  isVenting: 0
   VanessaSprite: {fileID: 490292308}
   Vanessa: {fileID: 490292312}
   GirlsBlue: {fileID: 303363698}
@@ -13637,7 +13638,9 @@ MonoBehaviour:
   Chicatiletracker: {fileID: 1466853908}
   Foxytiletracker: {fileID: 1180456886}
   Freddytiletracker: {fileID: 1269996708}
+  VaPlayerMovement: {fileID: 490292318}
   VanessaVisibility: {fileID: 490292320}
+  VanessaVenting: {fileID: 490292317}
   RoundTracker: {fileID: 245067645}
   FlashlightButton: {fileID: 2061241187}
   GuardActionButton: {fileID: 538849307}
