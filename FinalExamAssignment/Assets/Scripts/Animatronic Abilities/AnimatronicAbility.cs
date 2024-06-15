@@ -10,6 +10,7 @@ public class AnimatronicAbility : MonoBehaviour
     public GameObject FreddyAbilityButton;
     public GameObject AnimatronicAbilityCanvas;
     public GameObject CupcakeButtons;
+    public GameObject TeleportButtons;
     public GameObject EndAnimatronicTurn;
 
     public GameObject Chica;
@@ -21,6 +22,7 @@ public class AnimatronicAbility : MonoBehaviour
     public void Start()
     {
         CupcakeButtons.SetActive(false);
+        TeleportButtons.SetActive(false);
     }
     public void AnimatronicAbilityUsage()
     {
@@ -43,7 +45,14 @@ public class AnimatronicAbility : MonoBehaviour
         else
         {
             FreddyAbilityButton.SetActive(false);
+            AnimatronicAbilityCanvas.SetActive(false);
+            EndAnimatronicTurn.SetActive(false);
+            TeleportButtons.SetActive(true);
+
+            Foxy.SetActive(false);
+            Chica.SetActive(false);
         }
-        
+
     }
+        
 }

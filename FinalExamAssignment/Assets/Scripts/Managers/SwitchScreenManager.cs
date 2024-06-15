@@ -16,6 +16,8 @@ public class SwitchScreenManager : MonoBehaviour
     public GameObject GuardActionButton;
     public GameObject TasksHeadings;
 
+    public VaPlayerMovement VaPlayerMovement;
+
     public GameObject GameView;
 
     public GameObject Foxy;
@@ -86,6 +88,7 @@ public class SwitchScreenManager : MonoBehaviour
         AnimatronicButtons.SetActive(true);
 
         EndAnimatronicTurnButton.SetActive(true);
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
     public void EndAnimatronicTurn()

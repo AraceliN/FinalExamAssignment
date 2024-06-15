@@ -104,7 +104,15 @@ public class FlashlightAbility : MonoBehaviour
                 Doors.SetActive(true);
                 if (VanessaVenting.isVenting == false)
                 {
-                    VaPlayerMovement.enabled = true;
+                    if(RoundTracker.isVanessaTurn)
+                    {
+                        VaPlayerMovement.enabled = true;
+                    }
+                    else
+                    {
+                        VaPlayerMovement.enabled = false;
+                    }
+               
                 }
                 
             }
@@ -119,7 +127,14 @@ public class FlashlightAbility : MonoBehaviour
             Doors.SetActive(true);
             if (VanessaVenting.isVenting == false)
             {
-                VaPlayerMovement.enabled = true;
+                if (RoundTracker.isVanessaTurn)
+                {
+                    VaPlayerMovement.enabled = true;
+                }
+                else
+                {
+                    VaPlayerMovement.enabled = false;
+                }
             }
         }
     }

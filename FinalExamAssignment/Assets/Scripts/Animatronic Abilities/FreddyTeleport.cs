@@ -16,6 +16,10 @@ public class FreddyTeleport : MonoBehaviour
     public GameObject Freddy;
     public FrPlayerMovement FrPlayerMovement;
 
+    public GameObject Chica;
+    public GameObject Foxy;
+
+
     public GameObject AnimatronicCanvas;
 
     public GameObject Controlroom;
@@ -39,7 +43,6 @@ public class FreddyTeleport : MonoBehaviour
 
     public void Start()
     {
-        TeleportButtons.SetActive(false);
 
         Controlroom.SetActive(false);
         Stage.SetActive(false);
@@ -312,6 +315,12 @@ public class FreddyTeleport : MonoBehaviour
         Kitchen.SetActive(false);
         Entrance.SetActive(false);
 
+        Foxy.SetActive(true);
+        Chica.SetActive(true);
+
         Freddy.transform.position = GameObject.Find(ClickedRoomName).transform.position;
+
+        AnimatronicCanvas.SetActive(true);
+        EndAnimatronicTurnButton.SetActive(true);
     }
 }

@@ -2064,6 +2064,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &59578680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59578681}
+  - component: {fileID: 59578682}
+  m_Layer: 0
+  m_Name: TeleportAbility
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &59578681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59578680}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3108.6855}
+  m_LocalScale: {x: 34.54095, y: 34.54095, z: 34.54095}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 426039284}
+  m_Father: {fileID: 700963338}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59578682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59578680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f9b8f94f3addd4290f65c6511ae41c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FreddyTileTracker: {fileID: 1269996708}
+  RoundTracker: {fileID: 245067645}
+  TeleportButtons: {fileID: 426039283}
+  AnimatronicAbilityButton: {fileID: 2086623136}
+  EndAnimatronicTurnButton: {fileID: 1480509890}
+  Freddy: {fileID: 1269996702}
+  FrPlayerMovement: {fileID: 1269996707}
+  Chica: {fileID: 1466853902}
+  Foxy: {fileID: 1180456880}
+  AnimatronicCanvas: {fileID: 1817545790}
+  Controlroom: {fileID: 967742425}
+  Stage: {fileID: 1790196743}
+  SecurityOffice: {fileID: 974401992}
+  DiningArea: {fileID: 2011782408}
+  Backroom: {fileID: 1014371318}
+  Unisex: {fileID: 2049719915}
+  Boys: {fileID: 2126881178}
+  Girls: {fileID: 952005180}
+  Restrooms: {fileID: 281695051}
+  PirateCove: {fileID: 1255412899}
+  SupplyCloset: {fileID: 2046059176}
+  Arcade: {fileID: 567315711}
+  WestHall: {fileID: 543875117}
+  PrizeCorner: {fileID: 1615024993}
+  EastHall: {fileID: 1248954767}
+  Kitchen: {fileID: 1523087438}
+  Entrance: {fileID: 156844820}
 --- !u!1 &63231868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,9 +3020,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4499,6 +4571,7 @@ MonoBehaviour:
   FreddyAbilityButton: {fileID: 2086623136}
   AnimatronicAbilityCanvas: {fileID: 1817545790}
   CupcakeButtons: {fileID: 375151313}
+  TeleportButtons: {fileID: 426039283}
   EndAnimatronicTurn: {fileID: 1480509890}
   Chica: {fileID: 1466853902}
   Foxy: {fileID: 1180456880}
@@ -4586,9 +4659,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6966,8 +7039,8 @@ Transform:
   m_GameObject: {fileID: 426039283}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3108.6855}
-  m_LocalScale: {x: 34.54095, y: 34.54095, z: 34.54095}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1014371319}
@@ -6987,7 +7060,7 @@ Transform:
   - {fileID: 2046059177}
   - {fileID: 1255412900}
   - {fileID: 1615024994}
-  m_Father: {fileID: 700963338}
+  m_Father: {fileID: 59578681}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427844675
 GameObject:
@@ -9579,9 +9652,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12359,9 +12432,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13581,7 +13654,7 @@ RectTransform:
   - {fileID: 1478991228}
   - {fileID: 771366472}
   - {fileID: 375151314}
-  - {fileID: 426039284}
+  - {fileID: 59578681}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -17119,9 +17192,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22599,9 +22672,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22731,9 +22804,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22997,9 +23070,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25413,9 +25486,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25545,9 +25618,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -26159,6 +26232,7 @@ MonoBehaviour:
   GuardActionsButtonsCanvas: {fileID: 834651500}
   GuardActionButton: {fileID: 538849307}
   TasksHeadings: {fileID: 1969198335}
+  VaPlayerMovement: {fileID: 0}
   GameView: {fileID: 1170099106}
   Foxy: {fileID: 1180456880}
   Chica: {fileID: 1466853902}
@@ -28961,9 +29035,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30849,9 +30923,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -32695,9 +32769,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -33196,6 +33270,7 @@ MonoBehaviour:
   FreddyAbilityButton: {fileID: 2086623136}
   AnimatronicAbilityCanvas: {fileID: 1817545790}
   CupcakeButtons: {fileID: 375151313}
+  TeleportButtons: {fileID: 426039283}
   EndAnimatronicTurn: {fileID: 1480509890}
   Chica: {fileID: 1466853902}
   Foxy: {fileID: 1180456880}
@@ -35670,9 +35745,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36196,9 +36271,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36328,9 +36403,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37018,6 +37093,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1817545795}
         m_TargetAssemblyTypeName: AnimatronicAbility, Assembly-CSharp
         m_MethodName: AnimatronicAbilityUsage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: ActivateTeleportButtons
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37736,9 +37823,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChicaCupcake, Assembly-CSharp
-        m_MethodName: PlaceCupcake
+      - m_Target: {fileID: 59578682}
+        m_TargetAssemblyTypeName: FreddyTeleport, Assembly-CSharp
+        m_MethodName: UseTeleport
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
