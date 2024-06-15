@@ -107,5 +107,12 @@ public class PowerMeterManager : MonoBehaviour
         return;
     }
 
+    public void ResetPowerMeter()
+    {
+        PowerMeterScript.PowerMeter = 20;
+        PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
+
+    }
+
 }
 

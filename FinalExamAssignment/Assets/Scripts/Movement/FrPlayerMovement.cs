@@ -14,7 +14,7 @@ public class FrPlayerMovement : MonoBehaviour
 
     public float playerSpeed = 4f;
 
-
+    public GameObject PrizeCornerBlue;
 
     Vector2 movement;
 
@@ -59,6 +59,11 @@ public class FrPlayerMovement : MonoBehaviour
 
         Rb.MovePosition(Rb.position + movement * playerSpeed * Time.fixedDeltaTime);
 
+    }
+
+    public void ResetFreddy()
+    {
+        transform.position = PrizeCornerBlue.transform.position;
     }
 
 }

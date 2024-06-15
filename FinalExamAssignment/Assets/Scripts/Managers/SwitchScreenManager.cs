@@ -136,4 +136,25 @@ public class SwitchScreenManager : MonoBehaviour
         VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
     }
 
+    public void ResetSwitchScreen()
+    {
+        Foxy.GetComponent<FoPlayerMovement>().enabled = false;
+        Chica.GetComponent<CPlayerMovement>().enabled = false;
+        Freddy.GetComponent<FrPlayerMovement>().enabled = false;
+        VanessaSprite.GetComponent<VaPlayerMovement>().enabled = false;
+
+        GuardActionsButtonsCanvas.SetActive(false);
+
+        EndVanessaTurnButton.SetActive(false);
+        StartVanessaTurnButton.SetActive(true);
+
+        EndAnimatronicTurnButton.SetActive(false);
+        StartAnimatronicTurnButton.SetActive(false);
+        GameView.SetActive(false);
+
+        VanessaButtons.SetActive(false);
+        AnimatronicButtons.SetActive(false);
+
+        TasksHeadings.SetActive(false);
+    }
 }

@@ -74,5 +74,14 @@ public class RoundTracker : MonoBehaviour
 
     }
 
+    public void ResetRounds()
+    {
+        roundNumber = 1;
+        isVanessaTurn = true;
+        extraCam = false;
+        FreddyAbilityButton.SetActive(false);
+        ChicaAbilityButton.SetActive(false);
+    }
+
 
 }

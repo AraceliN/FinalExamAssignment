@@ -14,7 +14,7 @@ public class VaPlayerMovement : MonoBehaviour
 
     public float playerSpeed = 4f;
 
-
+    public GameObject SecurityOfficeBlue;
 
     Vector2 movement;
 
@@ -97,6 +97,11 @@ public class VaPlayerMovement : MonoBehaviour
 
         facingRight = !facingRight;
 
+    }
+
+    public void ResetVanessa()
+    {
+        transform.position = SecurityOfficeBlue.transform.position;
     }
 
 }

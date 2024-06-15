@@ -14,7 +14,7 @@ public class CPlayerMovement : MonoBehaviour
 
     public float playerSpeed = 4f;
 
-
+    public GameObject KitchenBlue;
 
     Vector2 movement;
 
@@ -61,5 +61,9 @@ public class CPlayerMovement : MonoBehaviour
 
     }
 
+    public void ResetChica()
+    {
+        transform.position = KitchenBlue.transform.position;
+    }
 
 }

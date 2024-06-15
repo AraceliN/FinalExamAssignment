@@ -15,7 +15,7 @@ public class FoPlayerMovement : MonoBehaviour
 
     public float playerSpeed = 4f;
 
-
+    public GameObject PirateCoveBlue;
 
     Vector2 movement;
 
@@ -60,4 +60,8 @@ public class FoPlayerMovement : MonoBehaviour
 
     }
 
+    public void ResetFoxy()
+    {
+        transform.position = PirateCoveBlue.transform.position;
+    }
 }

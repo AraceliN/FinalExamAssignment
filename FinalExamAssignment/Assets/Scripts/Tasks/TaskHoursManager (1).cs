@@ -32,15 +32,18 @@ public class TaskHoursManager : MonoBehaviour
 
     public int totalHours;
 
-    public bool freecam = false;
+    public bool freecam ;
 
-    int emergencydoor = 0;
+    int emergencydoor;
 
     public GameManager gameManager;
 
     private void Start()
     {
         gameManager = GetComponent<GameManager>();
+        freecam = false;
+        emergencydoor = 0;
+        totalHours = 0;
     }
 
     void Update()
@@ -198,4 +201,10 @@ public class TaskHoursManager : MonoBehaviour
          }
      }
      */
+    public void ResetHours()
+    {
+        freecam = false;
+        emergencydoor = 0;
+        totalHours = 0;
+    }
 }
