@@ -187,12 +187,40 @@ public class SoundAbility : MonoBehaviour
 
         else if (ClickedRoomName == "Restrooms")
         {
-
+            if (FreddyTileTracker.currentTile == "SecurityOffice" || FreddyTileTracker.currentTile == "Girls" || FreddyTileTracker.currentTile == "Boys" || FreddyTileTracker.currentTile == "Entrance" || FreddyTileTracker.currentTile == "Unisex" || FreddyTileTracker.currentTile == "Kitchen" ||
+               FreddyTileTracker.currentTile == "HallwayK-R" || FreddyTileTracker.currentTile == "HallwayG-R" || FreddyTileTracker.currentTile == "HallwayB-R" || FreddyTileTracker.currentTile == "HallwayR-U" || FreddyTileTracker.currentTile == "HallwayE-S-R")
+            {
+                Freddy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (FoxyTileTracker.currentTile == "SecurityOffice" || FoxyTileTracker.currentTile == "Girls" || FoxyTileTracker.currentTile == "Boys" || FoxyTileTracker.currentTile == "Entrance" || FoxyTileTracker.currentTile == "Unisex" || FoxyTileTracker.currentTile == "Kitchen" ||
+               FoxyTileTracker.currentTile == "HallwayK-R" || FoxyTileTracker.currentTile == "HallwayG-R" || FoxyTileTracker.currentTile == "HallwayB-R" || FoxyTileTracker.currentTile == "HallwayR-U" || FoxyTileTracker.currentTile == "HallwayE-S-R")
+            {
+                Foxy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (ChicaTileTracker.currentTile == "SecurityOffice" || ChicaTileTracker.currentTile == "Girls" || ChicaTileTracker.currentTile == "Boys" || ChicaTileTracker.currentTile == "Entrance" || ChicaTileTracker.currentTile == "Unisex" || ChicaTileTracker.currentTile == "Kitchen" ||
+               ChicaTileTracker.currentTile == "HallwayK-R" || ChicaTileTracker.currentTile == "HallwayG-R" || ChicaTileTracker.currentTile == "HallwayB-R" || ChicaTileTracker.currentTile == "HallwayR-U" || ChicaTileTracker.currentTile == "HallwayE-S-R")
+            {
+                Chica.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
         }
 
         else if (ClickedRoomName == "PirateCove")
         {
-
+            if (FreddyTileTracker.currentTile == "WestHall" || FreddyTileTracker.currentTile == "DiningArea" || FreddyTileTracker.currentTile == "Backroom" ||
+             FreddyTileTracker.currentTile == "HallwayW-P" || FreddyTileTracker.currentTile == "HallwayB-D-P" )
+            {
+                Freddy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (FoxyTileTracker.currentTile == "WestHall" || FoxyTileTracker.currentTile == "DiningArea" || FoxyTileTracker.currentTile == "Backroom" ||
+            FoxyTileTracker.currentTile == "HallwayW-P" || FoxyTileTracker.currentTile == "HallwayB-D-P")
+            {
+                Foxy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (ChicaTileTracker.currentTile == "WestHall" || ChicaTileTracker.currentTile == "DiningArea" || ChicaTileTracker.currentTile == "Backroom" ||
+            ChicaTileTracker.currentTile == "HallwayW-P" || ChicaTileTracker.currentTile == "HallwayB-D-P")
+            {
+                Chica.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
 
         }
 
@@ -304,7 +332,21 @@ public class SoundAbility : MonoBehaviour
 
         else if (ClickedRoomName == "Entrance")
         {
-
+            if (FreddyTileTracker.currentTile == "Controlroom" || FreddyTileTracker.currentTile == "SecurityOffice" || FreddyTileTracker.currentTile == "Restrooms" ||
+             FreddyTileTracker.currentTile == "HallwayC-E" || FreddyTileTracker.currentTile == "HallwayE-S-R" )
+            {
+                Freddy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (FoxyTileTracker.currentTile == "Controlroom" || FoxyTileTracker.currentTile == "SecurityOffice" || FoxyTileTracker.currentTile == "Restrooms" ||
+            FoxyTileTracker.currentTile == "HallwayC-E" || FoxyTileTracker.currentTile == "HallwayE-S-R")
+            {
+                Foxy.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
+            if (ChicaTileTracker.currentTile == "Controlroom" || ChicaTileTracker.currentTile == "SecurityOffice" || ChicaTileTracker.currentTile == "Restrooms" ||
+            ChicaTileTracker.currentTile == "HallwayC-E" || ChicaTileTracker.currentTile == "HallwayE-S-R")
+            {
+                Chica.transform.position = GameObject.Find(BlueSquare).transform.position;
+            }
         }
 
 
