@@ -49029,10 +49029,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DoorGuardAction, Assembly-CSharp
+      - m_Target: {fileID: 1398868704}
+        m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
         m_MethodName: Selectdoors
-        m_Mode: 0
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

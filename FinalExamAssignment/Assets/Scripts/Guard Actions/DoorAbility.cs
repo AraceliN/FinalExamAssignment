@@ -45,6 +45,7 @@ public class DoorAbility : MonoBehaviour
     public GameObject Boys_left;
     public GameObject Dropdown;
     public GameObject GuardActionsButton;
+    public GameObject EndVTurnButton;
 
     int numberofSelections;
     int maxSelections = 2;
@@ -65,6 +66,7 @@ public class DoorAbility : MonoBehaviour
         {
             Dropdown.SetActive(false);
             GuardActionsButton.SetActive(true);
+            EndVTurnButton.SetActive(true);
             numberofSelections = 0;
             selected2 = false;
         }
@@ -546,6 +548,46 @@ public class DoorAbility : MonoBehaviour
         }
     }
 
-
+    public void ResetDoors()
+    {
+        Kitchen_left.SetActive(false);
+        Kitchen_top.SetActive(false);
+        EastHall_right.SetActive(false);
+        EastHall_left.SetActive(false);
+        EastHall_top.SetActive(false);
+        PrizeCorner_right.SetActive(false);
+        PrizeCorner_left.SetActive(false);
+        WestHall_right.SetActive(false);
+        WestHall_left.SetActive(false);
+        WestHall_top.SetActive(false);
+        SupplyCloset_right.SetActive(false);
+        PirateCove_right.SetActive(false);
+        PirateCove_top.SetActive(false);
+        Backroom_right.SetActive(false);
+        DiningArea_bottom.SetActive(false);
+        DiningArea_left.SetActive(false);
+        DiningArea_right.SetActive(false);
+        ControlRoom_bottom.SetActive(false);
+        ControlRoom_right.SetActive(false);
+        Stage_bottom.SetActive(false);
+        Stage_top.SetActive(false);
+        Security_bottom.SetActive(false);
+        Security_left.SetActive(false);
+        Security_right.SetActive(false);
+        Security_top.SetActive(false);
+        Arcade_bottom.SetActive(false);
+        Arcade_left.SetActive(false);
+        Arcade_top.SetActive(false);
+        Entrance_bottom.SetActive(false);
+        Entrance_left.SetActive(false);
+        Restrooms_bottom.SetActive(false);
+        Restrooms_left.SetActive(false);
+        Restrooms_rightTop.SetActive(false);
+        Restrooms_rightBottom.SetActive(false);
+        Restrooms_top.SetActive(false);
+        Unisex_bottom.SetActive(false);
+        Girls_left.SetActive(false);
+        Boys_left.SetActive(false);
+    }
 
 }
