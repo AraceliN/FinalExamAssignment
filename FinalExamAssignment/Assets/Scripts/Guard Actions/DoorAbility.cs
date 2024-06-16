@@ -46,6 +46,7 @@ public class DoorAbility : MonoBehaviour
     public GameObject Dropdown;
     public GameObject GuardActionsButton;
     public GameObject EndVTurnButton;
+    public GameObject Vanessa;
 
     int numberofSelections;
     int maxSelections = 2;
@@ -67,6 +68,7 @@ public class DoorAbility : MonoBehaviour
             Dropdown.SetActive(false);
             GuardActionsButton.SetActive(true);
             EndVTurnButton.SetActive(true);
+            Vanessa.SetActive(true);
             numberofSelections = 0;
             selected2 = false;
         }

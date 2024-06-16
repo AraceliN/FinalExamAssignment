@@ -37567,6 +37567,8 @@ MonoBehaviour:
   Boys_left: {fileID: 742988355}
   Dropdown: {fileID: 1890898824}
   GuardActionsButton: {fileID: 538849307}
+  EndVTurnButton: {fileID: 851890856}
+  Vanessa: {fileID: 490292308}
 --- !u!4 &1398868705
 Transform:
   m_ObjectHideFlags: 0
@@ -49032,7 +49034,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1398868704}
         m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
         m_MethodName: Selectdoors
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -54964,6 +54966,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 490292311}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1398868704}
+        m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
+        m_MethodName: ResetDoors
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
