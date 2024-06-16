@@ -15482,7 +15482,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: START GAME
+  m_Text: Exit Tutorial
 --- !u!222 &581988336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15590,7 +15590,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Can move only one block.'
+  m_text: '- Has 5 movement actions to use each round.
+
+
+    - Can only move up to
+    5 blocks, using 1 movement point per block.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16125,7 +16129,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Can move only one block.'
+  m_text: '- Has 5 movement actions to use each round.
+
+
+    - Can only move up to
+    5 blocks, using 1 movement point per block.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -34076,7 +34084,7 @@ SpriteRenderer:
   m_Size: {x: 6.92, y: 5.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1409386405
@@ -36512,7 +36520,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Can move only one block.'
+  m_text: '- Has 5 movement actions to use each round.
+
+
+    - Can only move up to
+    5 blocks, using 1 movement point per block.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -40406,7 +40418,7 @@ GameObject:
   - component: {fileID: 1741149720}
   - component: {fileID: 1741149719}
   m_Layer: 5
-  m_Name: ToStartGame
+  m_Name: ToStartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45987,9 +45999,10 @@ MonoBehaviour:
     entrance of any room/s.
 
     - Can use the flashlight to transport an animatronic
-    to a different room.
+    to an adjacent room.
 
-    - Can produce a sound in 1 room.
+    - Can produce a sound in 1 room to transport animatronics
+    from adjacent rooms.
 
 
 '
@@ -46019,8 +46032,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
