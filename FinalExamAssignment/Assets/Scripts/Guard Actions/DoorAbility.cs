@@ -70,6 +70,11 @@ public class DoorAbility : MonoBehaviour
         }
     }
 
+    public void ActivateDoorSelector()
+    {
+        Dropdown.SetActive(true);
+    }
+
 
     private void Start()
     {

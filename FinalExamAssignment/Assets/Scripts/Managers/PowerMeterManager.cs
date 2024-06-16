@@ -82,8 +82,9 @@ public class PowerMeterManager : MonoBehaviour
     {
         PowerMeterScript.PowerMeter -= 1;
         PowerMeterScript.powerMeterText.text = PowerMeterScript.PowerMeter.ToString("");
-        GuardActionButton.SetActive(true);
         GuardActionsButtonsCanvas.SetActive(false);
+        EndVanessaTurnButton.SetActive(false);
+        Vanessa.SetActive(false);
         return;
     }
 
