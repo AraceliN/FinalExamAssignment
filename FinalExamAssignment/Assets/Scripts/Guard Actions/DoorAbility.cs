@@ -278,161 +278,389 @@ public class DoorAbility : MonoBehaviour
     public void DoorChecker()
     {
         if (kitchen_left == true)
-        { 
-
+        {
+            kitchenLeftInt ++;
         }
+        else
+        {
+            kitchenLeftInt = 0;
+        }
+
+
         if (kitchen_top == true)
         {
-
+            kitchenTopInt++;
         }
+        else
+        {
+            kitchenTopInt = 0;
+        }
+
+
         if (eastHall_right == true)
         {
-
+            eastHallRightInt++;
         }
+        else
+        {
+            eastHallRightInt = 0;
+        }
+
+
         if (eastHall_left == true)
         {
-
+            eastHallLeftInt++;
         }
+        else
+        {
+            eastHallLeftInt = 0;
+        }
+
+
         if (eastHall_top == true)
         {
-
+            eastHallTopInt++;
         }
+        else
+        {
+            eastHallTopInt = 0;
+        }
+
+
         if (prizeCorner_right == true)
         {
-
+            prizeCornerRightInt++;
         }
+        else
+        {
+            prizeCornerRightInt = 0;
+        }
+
+
         if (prizeCorner_left == true)
         {
-
+            prizeCornerLeftInt++;
+           
         }
+        else
+        {
+            prizeCornerLeftInt = 0;
+        }
+
+
         if (westHall_right == true)
         {
-
+            westHallRightInt++;
         }
+        else
+        {
+            westHallRightInt = 0;
+        }
+
+
         if (westHall_left == true)
         {
-
+            westHallLeftInt++;
         }
+        else
+        {
+            westHallLeftInt = 0;
+        }
+
+
         if (westHall_top == true)
         {
-
+            westHallTopInt++;
         }
+        else
+        {
+            westHallTopInt = 0;
+        }
+
+
         if (supplyCloset_right == true)
         {
-
+            supplyClosetRightInt++;
         }
+        else
+        {
+            supplyClosetRightInt= 0;
+        }
+
+
         if (pirateCove_right == true)
         {
-
+            pirateCoveRightInt++;
         }
+        else
+        {
+            pirateCoveRightInt = 0;
+        }
+
+
         if (pirateCove_top == true)
         {
-
+            pirateCoveTopInt++;
         }
+        else
+        {
+            pirateCoveTopInt = 0;
+        }
+
+
         if (backroom_right == true)
         {
-
+            backroomRightInt++;
         }
+        else
+        {
+            backroomRightInt = 0;
+        }
+
+
         if (diningArea_left == true)
         {
-
+            diningAreaLeftInt++;
         }
+        else
+        {
+            diningAreaLeftInt = 0;
+        }
+
+
         if (diningArea_bottom == true)
         {
-
+            diningAreaBottomInt++;
         }
+        else
+        {
+            diningAreaBottomInt = 0;
+        }
+
+
         if (diningArea_right == true)
         {
-
+            diningAreaRightInt++;
         }
+        else
+        {
+            diningAreaRightInt = 0;
+        }
+
+
         if (controlRoom_right == true)
         {
-
+            controlRoomRightInt++;
         }
+        else
+        {
+            controlRoomRightInt = 0;
+        }
+
+
         if (controlRoom_bottom == true)
         {
-
+            controlRoomBottomInt++;
         }
+        else
+        {
+            controlRoomBottomInt = 0;
+        }
+
+
         if (stage_top == true)
         {
-
+            stageTopInt++;
         }
+        else
+        {
+            stageTopInt = 0;
+        }
+
+
         if (stage_bottom == true)
         {
-
+            stageBottomInt++;
         }
+        else
+        {
+            stageBottomInt = 0;
+        }
+
+
         if (security_left == true)
         {
-
+            securityLeftInt++;
         }
+        else
+        {
+            securityLeftInt = 0;
+        }
+
+
         if (security_top == true)
         {
-
+            securityRightInt++;
         }
+        else
+        {
+            securityRightInt = 0;
+        }
+
+
         if (security_bottom == true)
         {
-
+            securityBottomInt++;
         }
+        else
+        {
+            securityBottomInt = 0;
+        }
+
+
         if (security_right == true)
         {
-
+            securityRightInt++;
         }
+        else
+        {
+            securityRightInt = 0;
+        }
+
+
         if (arcade_bottom == true)
         {
-
+            arcadeBottomInt++;
         }
+        else
+        {
+            arcadeBottomInt = 0;
+        }
+
+
         if (arcade_top == true)
         {
-
+            arcadeTopInt++;
         }
+        else
+        {
+            arcadeTopInt = 0;
+        }
+
+
         if (arcade_left == true)
         {
-
+            arcadeLeftInt++;
         }
+        else
+        {
+            arcadeLeftInt = 0;
+        }
+
+
         if (entrance_bottom == true)
         {
-
+            entranceBottomInt++;
         }
+        else
+        {
+            entranceBottomInt = 0;
+        }
+
+
         if (entrance_left == true)
         {
-
+            entranceLeftInt++;
         }
+        else
+        {
+            entranceLeftInt = 0;
+        }
+
+
         if (restrooms_left == true)
         {
-
+            restroomsLeftInt++;
         }
+        else
+        {
+            restroomsLeftInt = 0;
+        }
+
+
         if (restrooms_rightTop == true)
         {
-
+            restroomsRightTopInt++;
         }
+        else
+        {
+            restroomsRightTopInt = 0;
+        }
+
+
         if (restrooms_rightBottom == true)
         {
-
+            restroomsRightBottomInt++;
         }
+        else
+        {
+            restroomsRightBottomInt = 0;
+        }
+
+
         if (restrooms_top == true)
         {
-
+            restroomsTopInt++;
         }
+        else
+        {
+            restroomsTopInt = 0;
+        }
+
 
         if (restrooms_bottom == true)
         {
-
+            restroomsBottomInt++;
         }
+        else
+        {
+            restroomsBottomInt = 0;
+        }
+
+
         if (unisex_bottom == true)
         {
-
+            unisexBottomInt++;
         }
+        else
+        {
+            unisexBottomInt = 0;
+        }
+
+
         if (girls_left == true)
         {
-
+            girlsLeftInt++;
         }
+        else
+        {
+            girlsLeftInt = 0;
+        }
+
+
         if (boys_left == true)
         {
-
+            boysLeftInt++;
+        }
+        else
+        {
+            boysLeftInt = 0;
         }
 
+
+
     }
-    
+
 
     public void Selectdoors(int index)
     {
@@ -602,7 +830,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Backroom_right.SetActive(true);
-                    Backroom_right.SetActive(true);
+                    backroom_right = true;
                     Update();
                     Reset();
 
@@ -614,7 +842,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     DiningArea_left.SetActive(true);
-                    DiningArea_left.SetActive(true);
+                    diningArea_left = true;
                     Update();
                     Reset();
 
@@ -626,7 +854,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     DiningArea_bottom.SetActive(true);
-                    DiningArea_bottom.SetActive(true);
+                    diningArea_bottom = true;
                     Update();
                     Reset();
 
@@ -638,7 +866,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     DiningArea_right.SetActive(true);
-                    DiningArea_right.SetActive(true);
+                    diningArea_right = true;
                     Update();
                     Reset();
 
@@ -650,7 +878,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     ControlRoom_right.SetActive(true);
-                    ControlRoom_right.SetActive(true);
+                    controlRoom_right = true;
                     Update();
                     Reset();
 
@@ -662,7 +890,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     ControlRoom_bottom.SetActive(true);
-                    ControlRoom_bottom.SetActive(true);
+                    controlRoom_bottom = true;
                     Update();
                     Reset();
 
@@ -674,7 +902,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Stage_top.SetActive(true);
-                    Stage_top.SetActive(true);
+                    stage_top = true;
                     Update();
                     Reset();
 
@@ -686,7 +914,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Stage_bottom.SetActive(true);
-                    Stage_bottom.SetActive(true);
+                    stage_bottom = true;
                     Update();
                     Reset();
 
@@ -698,7 +926,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_left.SetActive(true);
-                    Security_left.SetActive(true);
+                    security_left = true;
                     Update();
                     Reset();
 
@@ -710,7 +938,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_top.SetActive(true);
-                    Security_top.SetActive(true);
+                    security_top = true;
                     Update();
                     Reset();
 
@@ -722,7 +950,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_bottom.SetActive(true);
-                    Security_bottom.SetActive(true);
+                    security_bottom = true;
                     Update();
                     Reset();
 
@@ -734,7 +962,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_right.SetActive(true);
-                    Security_right.SetActive(true);
+                    security_right = true;
                     Update();
                     Reset();
 
@@ -746,7 +974,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Arcade_bottom.SetActive(true);
-                    Arcade_bottom.SetActive(true);
+                    arcade_bottom = true;
                     Update();
                     Reset();
 
@@ -758,7 +986,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Arcade_top.SetActive(true);
-                    Arcade_top.SetActive(true);
+                    arcade_top = true;
                     Update();
                     Reset();
 
@@ -770,7 +998,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Arcade_left.SetActive(true);
-                    Arcade_left.SetActive(true);
+                    arcade_left = true;
                     Update();
                     Reset();
 
@@ -782,7 +1010,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Entrance_bottom.SetActive(true);
-                    Entrance_bottom.SetActive(true);
+                    entrance_bottom = true;
                     Update();
                     Reset();
 
@@ -794,7 +1022,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Entrance_left.SetActive(true);
-                    Entrance_left.SetActive(true);
+                    entrance_left = true;
                     Update();
                     Reset();
 
@@ -806,7 +1034,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_bottom.SetActive(true);
-                    Restrooms_bottom.SetActive(true);
+                    restrooms_bottom = true;
                     Update();
                     Reset();
 
@@ -818,7 +1046,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_left.SetActive(true);
-                    Restrooms_left.SetActive(true);
+                    restrooms_left = true;
                     Update();
                     Reset();
 
@@ -830,7 +1058,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_rightTop.SetActive(true);
-                    Restrooms_rightTop.SetActive(true);
+                    restrooms_rightTop = true;
                     Update();
                     Reset();
 
@@ -842,7 +1070,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_rightBottom.SetActive(true);
-                    Restrooms_rightBottom.SetActive(true);
+                    restrooms_rightBottom = true;
                     Update();
                     Reset();
 
@@ -854,7 +1082,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_top.SetActive(true);
-                    Restrooms_top.SetActive(true);
+                    restrooms_top = true;
                     Update();
                     Reset();
 
@@ -866,7 +1094,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Unisex_bottom.SetActive(true);
-                    Unisex_bottom.SetActive(true);
+                    unisex_bottom = true;
                     Update();
                     Reset();
 
@@ -878,7 +1106,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Girls_left.SetActive(true);
-                    Girls_left.SetActive(true);
+                    girls_left = true;
                     Update();
                     Reset();
 
@@ -891,7 +1119,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Boys_left.SetActive(true);
-                    Boys_left.SetActive(true);
+                    boys_left = true;
                     Update();
                     Reset();
 
