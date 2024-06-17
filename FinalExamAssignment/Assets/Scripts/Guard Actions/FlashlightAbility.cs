@@ -368,6 +368,8 @@ public class FlashlightAbility : MonoBehaviour
     }
     public void UseFlashLight()
     {
+        EndVanessaTurnButton.SetActive(true);
+
         string ClickedRoomName = EventSystem.current.currentSelectedGameObject.name;
         ClickedRoomName = ClickedRoomName + "Blue";
         Controlroom.SetActive(false);
