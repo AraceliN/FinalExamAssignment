@@ -286,7 +286,7 @@ public class DoorAbility : MonoBehaviour
 
         if (kitchen_left == true)
         {
-            if (kitchenLeftInt < 3)
+            if (kitchenLeftInt < 2)
             {
                 kitchenLeftInt++;
             }
@@ -303,7 +303,7 @@ public class DoorAbility : MonoBehaviour
 
         if (kitchen_top == true)
         {
-            if (kitchenTopInt < 3)
+            if (kitchenTopInt < 2)
             {
                 kitchenTopInt++;
             }
@@ -320,7 +320,7 @@ public class DoorAbility : MonoBehaviour
 
         if (eastHall_right == true)
         {
-            if (eastHallRightInt < 3)
+            if (eastHallRightInt < 2)
             {
                 eastHallRightInt++;
             }
@@ -337,7 +337,7 @@ public class DoorAbility : MonoBehaviour
 
         if (eastHall_left == true)
         {
-            if (eastHallLeftInt < 3)
+            if (eastHallLeftInt < 2)
             {
                 eastHallLeftInt++;
             }
@@ -354,7 +354,7 @@ public class DoorAbility : MonoBehaviour
 
         if (eastHall_top == true)
         {
-            if (eastHallTopInt < 3)
+            if (eastHallTopInt < 2)
             {
                 eastHallTopInt++;
             }
@@ -371,7 +371,7 @@ public class DoorAbility : MonoBehaviour
 
         if (prizeCorner_right == true)
         {
-            if (prizeCornerRightInt < 3)
+            if (prizeCornerRightInt < 2)
             {
                 prizeCornerRightInt++;
             }
@@ -388,7 +388,7 @@ public class DoorAbility : MonoBehaviour
 
         if (prizeCorner_left == true)
         {
-            if (prizeCornerLeftInt < 3)
+            if (prizeCornerLeftInt < 2)
             {
                 prizeCornerLeftInt++;
             }
@@ -406,7 +406,7 @@ public class DoorAbility : MonoBehaviour
 
         if (westHall_right == true)
         {
-            if (westHallRightInt < 3)
+            if (westHallRightInt < 2)
             {
                 westHallRightInt++;
             }
@@ -423,7 +423,7 @@ public class DoorAbility : MonoBehaviour
 
         if (westHall_left == true)
         {
-            if (westHallLeftInt < 3)
+            if (westHallLeftInt < 2)
             {
                 westHallLeftInt++;
             }
@@ -440,7 +440,7 @@ public class DoorAbility : MonoBehaviour
 
         if (westHall_top == true)
         {
-            if (westHallTopInt < 3)
+            if (westHallTopInt < 2)
             {
                 westHallTopInt++;
             }
@@ -457,7 +457,7 @@ public class DoorAbility : MonoBehaviour
 
         if (supplyCloset_right == true)
         {
-            if (supplyClosetRightInt < 3)
+            if (supplyClosetRightInt < 2)
             {
                 supplyClosetRightInt++;
             }
@@ -474,7 +474,7 @@ public class DoorAbility : MonoBehaviour
 
         if (pirateCove_right == true)
         {
-            if (pirateCoveRightInt < 3)
+            if (pirateCoveRightInt < 2)
             {
                 pirateCoveRightInt++;
             }
@@ -491,7 +491,7 @@ public class DoorAbility : MonoBehaviour
 
         if (pirateCove_top == true)
         {
-            if (pirateCoveTopInt < 3)
+            if (pirateCoveTopInt < 2)
             {
                 pirateCoveTopInt++;
             }
@@ -508,7 +508,7 @@ public class DoorAbility : MonoBehaviour
 
         if (backroom_right == true)
         {
-            if (backroomRightInt < 3)
+            if (backroomRightInt < 2)
             {
                 backroomRightInt++;
             }
@@ -525,7 +525,7 @@ public class DoorAbility : MonoBehaviour
 
         if (diningArea_left == true)
         {
-            if (diningAreaLeftInt < 3)
+            if (diningAreaLeftInt < 2)
             {
                 diningAreaLeftInt++;
             }
@@ -542,7 +542,7 @@ public class DoorAbility : MonoBehaviour
 
         if (diningArea_bottom == true)
         {
-            if (diningAreaBottomInt < 3)
+            if (diningAreaBottomInt < 2)
             {
                 diningAreaBottomInt++;
             }
@@ -559,7 +559,7 @@ public class DoorAbility : MonoBehaviour
 
         if (diningArea_right == true)
         {
-            if (diningAreaRightInt < 3)
+            if (diningAreaRightInt < 2)
             {
                 diningAreaRightInt++;
             }
@@ -576,7 +576,7 @@ public class DoorAbility : MonoBehaviour
 
         if (controlRoom_right == true)
         {
-            if (controlRoomRightInt < 3)
+            if (controlRoomRightInt < 2)
             {
                 controlRoomRightInt++;
             }
@@ -593,7 +593,7 @@ public class DoorAbility : MonoBehaviour
 
         if (controlRoom_bottom == true)
         {
-            if (controlRoomBottomInt < 3)
+            if (controlRoomBottomInt < 2)
             {
                 controlRoomBottomInt++;
             }
@@ -610,7 +610,7 @@ public class DoorAbility : MonoBehaviour
 
         if (stage_top == true)
         {
-            if (stageTopInt < 3)
+            if (stageTopInt < 2)
             {
                 stageTopInt++;
             }
@@ -627,7 +627,7 @@ public class DoorAbility : MonoBehaviour
 
         if (stage_bottom == true)
         {
-            if (stageBottomInt < 3)
+            if (stageBottomInt < 2)
             {
                 stageBottomInt++;
             }
@@ -644,7 +644,7 @@ public class DoorAbility : MonoBehaviour
 
         if (security_left == true)
         {
-            if (securityLeftInt < 3)
+            if (securityLeftInt < 2)
             {
                 securityLeftInt++;
             }
@@ -661,7 +661,7 @@ public class DoorAbility : MonoBehaviour
 
         if (security_top == true)
         {
-            if (securityTopInt < 3)
+            if (securityTopInt < 2)
             {
                 securityTopInt++;
             }
@@ -678,7 +678,7 @@ public class DoorAbility : MonoBehaviour
 
         if (security_bottom == true)
         {
-            if (securityBottomInt < 3)
+            if (securityBottomInt < 2)
             {
                 securityBottomInt++;
             }
@@ -695,7 +695,7 @@ public class DoorAbility : MonoBehaviour
 
         if (security_right == true)
         {
-            if (securityRightInt < 3)
+            if (securityRightInt < 2)
             {
                 securityRightInt++;
             }
@@ -712,7 +712,7 @@ public class DoorAbility : MonoBehaviour
 
         if (arcade_bottom == true)
         {
-            if (arcadeBottomInt < 3)
+            if (arcadeBottomInt < 2)
             {
                 arcadeBottomInt++;
             }
@@ -729,7 +729,7 @@ public class DoorAbility : MonoBehaviour
 
         if (arcade_top == true)
         {
-            if (arcadeTopInt < 3)
+            if (arcadeTopInt < 2)
             {
                 arcadeTopInt++;
             }
@@ -746,7 +746,7 @@ public class DoorAbility : MonoBehaviour
 
         if (arcade_left == true)
         {
-            if (arcadeLeftInt < 3)
+            if (arcadeLeftInt < 2)
             {
                 arcadeLeftInt++;
             }
@@ -763,7 +763,7 @@ public class DoorAbility : MonoBehaviour
 
         if (entrance_bottom == true)
         {
-            if (entranceBottomInt < 3)
+            if (entranceBottomInt < 2)
             {
                 entranceBottomInt++;
             }
@@ -780,7 +780,7 @@ public class DoorAbility : MonoBehaviour
 
         if (entrance_left == true)
         {
-            if (entranceLeftInt < 3)
+            if (entranceLeftInt < 2)
             {
                 entranceLeftInt++;
             }
@@ -797,7 +797,7 @@ public class DoorAbility : MonoBehaviour
 
         if (restrooms_left == true)
         {
-            if (restroomsLeftInt < 3)
+            if (restroomsLeftInt < 2)
             {
                 restroomsLeftInt++;
             }
@@ -814,7 +814,7 @@ public class DoorAbility : MonoBehaviour
 
         if (restrooms_rightTop == true)
         {
-            if (restroomsRightTopInt < 3)
+            if (restroomsRightTopInt < 2)
             {
                 restroomsRightTopInt++;
             }
@@ -831,7 +831,7 @@ public class DoorAbility : MonoBehaviour
 
         if (restrooms_rightBottom == true)
         {
-            if (restroomsRightBottomInt < 3)
+            if (restroomsRightBottomInt < 2)
             {
                 restroomsRightBottomInt++;
             }
@@ -848,7 +848,7 @@ public class DoorAbility : MonoBehaviour
 
         if (restrooms_top == true)
         {
-            if (restroomsTopInt < 3)
+            if (restroomsTopInt < 2)
             {
                 restroomsTopInt++;
             }
@@ -865,7 +865,7 @@ public class DoorAbility : MonoBehaviour
 
         if (restrooms_bottom == true)
         {
-            if (restroomsBottomInt < 3)
+            if (restroomsBottomInt < 2)
             {
                 restroomsBottomInt++;
             }
@@ -882,7 +882,7 @@ public class DoorAbility : MonoBehaviour
 
         if (unisex_bottom == true)
         {
-            if (unisexBottomInt < 3)
+            if (unisexBottomInt < 2)
             {
                 unisexBottomInt++;
             }
@@ -899,7 +899,7 @@ public class DoorAbility : MonoBehaviour
 
         if (girls_left == true)
         {
-            if (girlsLeftInt < 3)
+            if (girlsLeftInt < 2)
             {
                 girlsLeftInt++;
             }
@@ -916,7 +916,7 @@ public class DoorAbility : MonoBehaviour
 
         if (boys_left == true)
         {
-            if (boysLeftInt < 3)
+            if (boysLeftInt < 2)
             {
                 boysLeftInt++;
             }

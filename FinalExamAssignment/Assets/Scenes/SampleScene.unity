@@ -11793,6 +11793,7 @@ MonoBehaviour:
   blueblockInGirlsBathroom: 0
   blueblockInUnisexBathroom: 0
   taskHoursManager: {fileID: 1764049170}
+  DoorAbility: {fileID: 1398868704}
   RoundsInEastHall: 0
   OnEastHallBlue: 0
 --- !u!114 &490292317
@@ -37627,6 +37628,7 @@ MonoBehaviour:
   unisex_bottom: 0
   girls_left: 0
   boys_left: 0
+  doorsDownForThreeRounds: 0
   kitchenLeftInt: 0
   kitchenTopInt: 0
   eastHallRightInt: 0

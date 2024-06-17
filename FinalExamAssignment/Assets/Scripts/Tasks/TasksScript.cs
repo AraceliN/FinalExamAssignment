@@ -29,6 +29,11 @@ public class TaskTracker : MonoBehaviour
         //Task2();
     }
 
+    public void Update()
+    {
+        Task2();
+    }
+
     void Task2()
     {
        if (DoorAbility.doorsDownForThreeRounds >= 4 )
