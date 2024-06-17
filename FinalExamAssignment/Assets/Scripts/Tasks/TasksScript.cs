@@ -18,10 +18,13 @@ public class TaskTracker : MonoBehaviour
     public bool blueblockInUnisexBathroom = false;
 
     public TaskHoursManager taskHoursManager;
+    public int RoundsInEastHall;
+    public bool OnEastHallBlue;
 
     public void Start()
     {
-
+        RoundsInEastHall = 0;
+        OnEastHallBlue = false;
         //Task2();
     }
 
@@ -47,18 +50,35 @@ public class TaskTracker : MonoBehaviour
             }
         }
     }
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         // for (int i = 0; i < 3; i++) //not the actual round tracker
         // {
-        if (other.tag == "EastHallBlue")
+        if (other.tag == "EastHall")
         {
+
+            OnEastHallBlue = true;
+            RoundsInEastHall += 1;
+
+            if (RoundsInEastHall == 3)
+            {
+                taskHoursManager.TaskThreeDone();
+            }
+            Debug.Log(RoundsInEastHall);
+            Debug.Log(OnEastHallBlue);
+           // taskHoursManager.TaskThreeDone();
             Debug.Log("Task 3 completed: stayed in East Hall for 3 consecutive rounds: +2 hours");
-           
-            taskHoursManager.TaskThreeDone();
+            
+
         }
         //  }
 
+        if (other.tag != "EastHall" && other.tag!= "EastHallBlue")
+        {
+            OnEastHallBlue = false;
+            RoundsInEastHall = 0;
+        }
 
         //Task1: must fix breakers in the west hall and backroom
         if (other.tag == "WestHallBlue")
@@ -105,6 +125,7 @@ public class TaskTracker : MonoBehaviour
 
     }
 
+
     private void CheckTaskOneCompletion()
     {
         if (westHall && backRoom)
@@ -124,5 +145,14 @@ public class TaskTracker : MonoBehaviour
             taskHoursManager.taskFourdone = true;
             taskHoursManager.TaskFourDone();
         }
+    }
+
+    public void decreaseRoundInEastHall()
+    {
+        if(OnEastHallBlue)
+        {
+            RoundsInEastHall--;
+        }
+        
     }
 }
