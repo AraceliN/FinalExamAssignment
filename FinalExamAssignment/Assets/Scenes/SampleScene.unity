@@ -4593,10 +4593,10 @@ MonoBehaviour:
   GuardActionButton: {fileID: 538849307}
   PowerMeterCanvas: {fileID: 1342969991}
   EndVanessaTurnButton: {fileID: 851890856}
-  Vanessa: {fileID: 0}
+  Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -6067,7 +6067,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -10613,7 +10613,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -21329,7 +21329,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -33556,7 +33556,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1180456881}
-  playerSpeed: 4
+  moveSpeed: 4
+  maxMoves: 5
   PirateCoveBlue: {fileID: 0}
 --- !u!114 &1180456886
 MonoBehaviour:
@@ -33571,7 +33572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
-  Sprite: {fileID: 1180456883}
+  Sprite: {fileID: 0}
 --- !u!114 &1180456887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35091,7 +35092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1269996704}
-  playerSpeed: 4
+  moveSpeed: 4
+  maxMoves: 5
   PrizeCornerBlue: {fileID: 0}
 --- !u!114 &1269996708
 MonoBehaviour:
@@ -35106,7 +35108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
-  Sprite: {fileID: 1269996705}
+  Sprite: {fileID: 0}
 --- !u!114 &1269996709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35295,10 +35297,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
-  AnimatronicTurnButton: {fileID: 0}
-  EndATurnButton: {fileID: 0}
-  VanessaTurnButton: {fileID: 0}
-  EndVTurnButton: {fileID: 0}
+  AnimatronicTurnButton: {fileID: 304395070}
+  EndATurnButton: {fileID: 1480509890}
+  VanessaTurnButton: {fileID: 2126863875}
+  EndVTurnButton: {fileID: 851890856}
 --- !u!4 &1282657118
 Transform:
   m_ObjectHideFlags: 0
@@ -35616,7 +35618,7 @@ MonoBehaviour:
   GuardActionsButtonsCanvas: {fileID: 834651500}
   GuardActionButton: {fileID: 538849307}
   TasksHeadings: {fileID: 1969198335}
-  VaPlayerMovement: {fileID: 0}
+  VaPlayerMovement: {fileID: 490292318}
   GameView: {fileID: 1170099106}
   Foxy: {fileID: 1180456880}
   Chica: {fileID: 1466853902}
@@ -35807,7 +35809,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -35996,7 +35998,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -39361,7 +39363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 1466853904}
-  playerSpeed: 4
+  moveSpeed: 4
+  maxMoves: 5
   KitchenBlue: {fileID: 0}
 --- !u!114 &1466853908
 MonoBehaviour:
@@ -39376,7 +39379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: 
-  Sprite: {fileID: 1466853905}
+  Sprite: {fileID: 0}
 --- !u!114 &1466853909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46480,7 +46483,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 293765046}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
@@ -53398,7 +53401,7 @@ MonoBehaviour:
   Vanessa: {fileID: 490292308}
   CameraButtons: {fileID: 1478991227}
   PowerMeterScript: {fileID: 1987585584}
-  SwitchScreen: {fileID: 700963334}
+  SwitchScreen: {fileID: 1338054684}
   taskHoursManager: {fileID: 1764049170}
   roundTracker: {fileID: 245067645}
   FlashLightAbility: {fileID: 771366471}
