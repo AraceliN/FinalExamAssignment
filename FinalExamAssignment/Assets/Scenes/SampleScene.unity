@@ -7908,6 +7908,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1398868704}
+        m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
+        m_MethodName: DoorChecker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &304395073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37577,6 +37589,82 @@ MonoBehaviour:
   GuardActionsButton: {fileID: 538849307}
   EndVTurnButton: {fileID: 851890856}
   Vanessa: {fileID: 490292308}
+  kitchen_left: 0
+  kitchen_top: 0
+  eastHall_right: 0
+  eastHall_left: 0
+  eastHall_top: 0
+  prizeCorner_right: 0
+  prizeCorner_left: 0
+  westHall_right: 0
+  westHall_left: 0
+  westHall_top: 0
+  supplyCloset_right: 0
+  pirateCove_right: 0
+  pirateCove_top: 0
+  backroom_right: 0
+  diningArea_left: 0
+  diningArea_bottom: 0
+  diningArea_right: 0
+  controlRoom_right: 0
+  controlRoom_bottom: 0
+  stage_top: 0
+  stage_bottom: 0
+  security_left: 0
+  security_top: 0
+  security_bottom: 0
+  security_right: 0
+  arcade_bottom: 0
+  arcade_top: 0
+  arcade_left: 0
+  entrance_bottom: 0
+  entrance_left: 0
+  restrooms_left: 0
+  restrooms_rightTop: 0
+  restrooms_rightBottom: 0
+  restrooms_top: 0
+  restrooms_bottom: 0
+  unisex_bottom: 0
+  girls_left: 0
+  boys_left: 0
+  kitchenLeftInt: 0
+  kitchenTopInt: 0
+  eastHallRightInt: 0
+  eastHallLeftInt: 0
+  eastHallTopInt: 0
+  prizeCornerRightInt: 0
+  prizeCornerLeftInt: 0
+  westHallRightInt: 0
+  westHallLeftInt: 0
+  westHallTopInt: 0
+  supplyClosetRightInt: 0
+  pirateCoveRightInt: 0
+  pirateCoveTopInt: 0
+  backroomRightInt: 0
+  diningAreaLeftInt: 0
+  diningAreaBottomInt: 0
+  diningAreaRightInt: 0
+  controlRoomRightInt: 0
+  controlRoomBottomInt: 0
+  stageTopInt: 0
+  stageBottomInt: 0
+  securityLeftInt: 0
+  securityTopInt: 0
+  securityBottomInt: 0
+  securityRightInt: 0
+  arcadeBottomInt: 0
+  arcadeTopInt: 0
+  arcadeLeftInt: 0
+  entranceBottomInt: 0
+  entranceLeftInt: 0
+  restroomsLeftInt: 0
+  restroomsRightTopInt: 0
+  restroomsRightBottomInt: 0
+  restroomsTopInt: 0
+  restroomsBottomInt: 0
+  unisexBottomInt: 0
+  girlsLeftInt: 0
+  boysLeftInt: 0
 --- !u!4 &1398868705
 Transform:
   m_ObjectHideFlags: 0
@@ -39532,6 +39620,18 @@ MonoBehaviour:
       - m_Target: {fileID: 245067645}
         m_TargetAssemblyTypeName: RoundTracker, Assembly-CSharp
         m_MethodName: NextRound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1398868704}
+        m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
+        m_MethodName: ResetDoorBools
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

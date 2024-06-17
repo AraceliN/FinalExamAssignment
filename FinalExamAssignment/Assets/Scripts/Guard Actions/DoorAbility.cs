@@ -566,6 +566,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     SupplyCloset_right.SetActive(true);
+                    supplyCloset_right = true;
                     Update();
                     Reset();
 
@@ -577,6 +578,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     PirateCove_right.SetActive(true);
+                    pirateCove_right = true;
                     Update();
                     Reset();
 
@@ -588,6 +590,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     PirateCove_top.SetActive(true);
+                    pirateCove_top = true;
                     Update();
                     Reset();
 
@@ -598,6 +601,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Backroom_right.SetActive(true);
                     Backroom_right.SetActive(true);
                     Update();
                     Reset();
@@ -610,6 +614,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     DiningArea_left.SetActive(true);
+                    DiningArea_left.SetActive(true);
                     Update();
                     Reset();
 
@@ -620,6 +625,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    DiningArea_bottom.SetActive(true);
                     DiningArea_bottom.SetActive(true);
                     Update();
                     Reset();
@@ -632,6 +638,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     DiningArea_right.SetActive(true);
+                    DiningArea_right.SetActive(true);
                     Update();
                     Reset();
 
@@ -642,6 +649,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    ControlRoom_right.SetActive(true);
                     ControlRoom_right.SetActive(true);
                     Update();
                     Reset();
@@ -654,6 +662,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     ControlRoom_bottom.SetActive(true);
+                    ControlRoom_bottom.SetActive(true);
                     Update();
                     Reset();
 
@@ -664,6 +673,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Stage_top.SetActive(true);
                     Stage_top.SetActive(true);
                     Update();
                     Reset();
@@ -676,6 +686,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Stage_bottom.SetActive(true);
+                    Stage_bottom.SetActive(true);
                     Update();
                     Reset();
 
@@ -686,6 +697,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Security_left.SetActive(true);
                     Security_left.SetActive(true);
                     Update();
                     Reset();
@@ -698,6 +710,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_top.SetActive(true);
+                    Security_top.SetActive(true);
                     Update();
                     Reset();
 
@@ -708,6 +721,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Security_bottom.SetActive(true);
                     Security_bottom.SetActive(true);
                     Update();
                     Reset();
@@ -720,6 +734,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Security_right.SetActive(true);
+                    Security_right.SetActive(true);
                     Update();
                     Reset();
 
@@ -730,6 +745,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Arcade_bottom.SetActive(true);
                     Arcade_bottom.SetActive(true);
                     Update();
                     Reset();
@@ -742,6 +758,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Arcade_top.SetActive(true);
+                    Arcade_top.SetActive(true);
                     Update();
                     Reset();
 
@@ -752,6 +769,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Arcade_left.SetActive(true);
                     Arcade_left.SetActive(true);
                     Update();
                     Reset();
@@ -764,6 +782,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Entrance_bottom.SetActive(true);
+                    Entrance_bottom.SetActive(true);
                     Update();
                     Reset();
 
@@ -774,6 +793,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Entrance_left.SetActive(true);
                     Entrance_left.SetActive(true);
                     Update();
                     Reset();
@@ -786,6 +806,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_bottom.SetActive(true);
+                    Restrooms_bottom.SetActive(true);
                     Update();
                     Reset();
 
@@ -796,6 +817,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Restrooms_left.SetActive(true);
                     Restrooms_left.SetActive(true);
                     Update();
                     Reset();
@@ -808,6 +830,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_rightTop.SetActive(true);
+                    Restrooms_rightTop.SetActive(true);
                     Update();
                     Reset();
 
@@ -818,6 +841,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Restrooms_rightBottom.SetActive(true);
                     Restrooms_rightBottom.SetActive(true);
                     Update();
                     Reset();
@@ -830,6 +854,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Restrooms_top.SetActive(true);
+                    Restrooms_top.SetActive(true);
                     Update();
                     Reset();
 
@@ -840,6 +865,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Unisex_bottom.SetActive(true);
                     Unisex_bottom.SetActive(true);
                     Update();
                     Reset();
@@ -852,6 +878,7 @@ public class DoorAbility : MonoBehaviour
                 {
                     numberofSelections++;
                     Girls_left.SetActive(true);
+                    Girls_left.SetActive(true);
                     Update();
                     Reset();
 
@@ -863,6 +890,7 @@ public class DoorAbility : MonoBehaviour
                 if (selected2 == false)
                 {
                     numberofSelections++;
+                    Boys_left.SetActive(true);
                     Boys_left.SetActive(true);
                     Update();
                     Reset();
