@@ -23,9 +23,12 @@ public class PowerMeterManager : MonoBehaviour
     public RoundTracker roundTracker;
     public FlashlightAbility FlashLightAbility;
 
+    public GameObject Freecam;
+
     public void Start()
     {
         CameraButtons.SetActive(false);
+        Freecam.SetActive(false);
     }
 
     public void Update()
@@ -45,6 +48,11 @@ public class PowerMeterManager : MonoBehaviour
             PowerMeterCanvas.SetActive(false);
             WinCanvas.SetActive(true);
             SwitchScreen.SetActive(false);
+        }
+
+        if(taskHoursManager.freecam == true)
+        {
+            Freecam.SetActive(true);
         }
     }
 
