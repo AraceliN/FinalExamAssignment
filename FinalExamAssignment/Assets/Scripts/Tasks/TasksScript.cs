@@ -18,6 +18,7 @@ public class TaskTracker : MonoBehaviour
     public bool blueblockInUnisexBathroom = false;
 
     public TaskHoursManager taskHoursManager;
+    public DoorAbility DoorAbility;
     public int RoundsInEastHall;
     public bool OnEastHallBlue;
 
@@ -30,24 +31,9 @@ public class TaskTracker : MonoBehaviour
 
     void Task2()
     {
-        door1 = GameObject.Find("door1");
-        door2 = GameObject.Find("door2");
-        door3 = GameObject.Find("door3");
-        door4 = GameObject.Find("door4");
-
-
-        for (int i = 0; i < 3; i++) // Simulating three rounds of checks, not the actual round tracker though
+       if (DoorAbility.doorsDownForThreeRounds >= 4 )
         {
-            if (door1.activeSelf && door2.activeSelf && door3.activeSelf && door4.activeSelf)
-            {
-                Debug.Log("Task 2 completed: 4 doors were kept closed for 3 consecutive rounds: +2 hours.");
-                taskHoursManager.TaskTwoDone();
-            }
-            else
-            {
-                Debug.Log("All 4 doors are not shut in round " + (i + 1));
-                break;  // Exit the loop as soon as one door is found open
-            }
+            taskHoursManager.TaskTwoDone();
         }
     }
 
