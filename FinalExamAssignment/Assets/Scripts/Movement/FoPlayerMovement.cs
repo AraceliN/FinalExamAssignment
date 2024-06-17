@@ -22,13 +22,14 @@ public class FoPlayerMovement : MonoBehaviour
 
     Vector2 movement;
     bool facingRight = true;
-
+    public int DashAmount;
 
 
     private void Start()
     {
         movesLeft = maxMoves;
         targetPosition = transform.position;
+        DashAmount = 3;
     }
 
     void Update()
@@ -80,4 +81,14 @@ public class FoPlayerMovement : MonoBehaviour
         transform.position = PirateCoveBlue.transform.position;
     }
 
+    public void ResetFoxyMovementPoints()
+    {
+        movesLeft = 5;
+    }
+
+    public void FoxyDash()
+    {
+        movesLeft = movesLeft + DashAmount;
+        DashAmount = 0;
+    }
 }

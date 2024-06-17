@@ -80,4 +80,8 @@ public class FrPlayerMovement : MonoBehaviour
         transform.position = PrizeCornerBlue.transform.position;
     }
 
+    public void ResetFreddyMovementPoints()
+    {
+        movesLeft = 5;
+    }
 }

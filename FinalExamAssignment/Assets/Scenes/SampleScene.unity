@@ -6294,6 +6294,7 @@ MonoBehaviour:
   roundNumberTxt: {fileID: 1611482076}
   isVanessaTurn: 0
   extraCam: 0
+  foPlayerMovement: {fileID: 1180456885}
 --- !u!114 &245067646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7911,6 +7912,42 @@ MonoBehaviour:
       - m_Target: {fileID: 1398868704}
         m_TargetAssemblyTypeName: DoorAbility, Assembly-CSharp
         m_MethodName: DoorChecker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1269996707}
+        m_TargetAssemblyTypeName: FrPlayerMovement, Assembly-CSharp
+        m_MethodName: ResetFreddyMovementPoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1180456885}
+        m_TargetAssemblyTypeName: FoPlayerMovement, Assembly-CSharp
+        m_MethodName: ResetFoxyMovementPoints
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1466853907}
+        m_TargetAssemblyTypeName: CPlayerMovement, Assembly-CSharp
+        m_MethodName: ResetChicaMovementPoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11832,7 +11869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 490292309}
-  playerSpeed: 4
+  moveSpeed: 4
+  maxMoves: 5
   SecurityOfficeBlue: {fileID: 0}
 --- !u!114 &490292319
 MonoBehaviour:
@@ -30983,6 +31021,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1180456885}
+        m_TargetAssemblyTypeName: FoPlayerMovement, Assembly-CSharp
+        m_MethodName: FoxyDash
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1022128259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33559,6 +33609,7 @@ MonoBehaviour:
   moveSpeed: 4
   maxMoves: 5
   PirateCoveBlue: {fileID: 0}
+  DashAmount: 0
 --- !u!114 &1180456886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55236,6 +55287,18 @@ MonoBehaviour:
       - m_Target: {fileID: 490292316}
         m_TargetAssemblyTypeName: TaskTracker, Assembly-CSharp
         m_MethodName: decreaseRoundInEastHall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 490292318}
+        m_TargetAssemblyTypeName: VaPlayerMovement, Assembly-CSharp
+        m_MethodName: ResetVanessaMovementPoints
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

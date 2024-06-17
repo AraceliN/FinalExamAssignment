@@ -21,6 +21,8 @@ public class RoundTracker : MonoBehaviour
     public bool isVanessaTurn;
     public bool extraCam;
 
+    public FoPlayerMovement foPlayerMovement;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,7 @@ public class RoundTracker : MonoBehaviour
         if (roundNumber % 3 == 1)
         {
             FoxyAbilityButton.SetActive(true);
+            foPlayerMovement.DashAmount = foPlayerMovement.DashAmount + 4;
             FreddyAbilityButton.SetActive(false);
             ChicaAbilityButton.SetActive(false);
         }

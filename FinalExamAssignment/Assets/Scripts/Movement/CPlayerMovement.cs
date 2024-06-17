@@ -80,4 +80,8 @@ public class CPlayerMovement : MonoBehaviour
         transform.position = KitchenBlue.transform.position;
     }
 
+    public void ResetChicaMovementPoints()
+    {
+        movesLeft = 5;
+    }
 }
